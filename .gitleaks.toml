@@ -9,6 +9,6 @@
   ]
 
 [[rules]]
-  description = "asdf-rule"
-  regex = '''asdfasdf'''
-  tags = ["custom-rule", "asdf"]
+  description = "fake-leaks-custom-rule"
+  regex = '''asdfasdfasdfasdf'''
+  tags = ["fake-leaks-custom-rule"]
