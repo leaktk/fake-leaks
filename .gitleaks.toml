@@ -1,0 +1,14 @@
+[allowlist]
+  description = "Allowlist"
+  paths = [
+    '''ignore\.d''',
+  ]
+  files = [
+    '''\.ignore\.txt$''',
+    '''^\.?gitleaks.toml$''',
+  ]
+
+[[rules]]
+  description = "asdf-rule"
+  regex = '''asdfasdf'''
+  tags = ["custom-rule", "asdf"]
