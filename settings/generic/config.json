@@ -1,4 +1,5 @@
 {
   "password": "cd7b820459d36b9339b78afb23b8c631", "Foo": "Bar",
+  "secret": "cd7b820459d36b9339b78afb23b8c631", "Foo": "Bar",
   "line": "noise", "Password": "cd7b820459d36b9339b78afb23b8c631", "Some": "Key"
 }
