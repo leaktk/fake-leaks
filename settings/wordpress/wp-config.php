@@ -26,7 +26,7 @@ define( 'DB_NAME', 'secretdb' );
 define( 'DB_USER', 'secretuser' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '9b2f70fe6ebb88c0ae0f2a2f4ca66c42' );
+define( 'DB_PASSWORD', '9b2f7xfe6ebb88c0ae0f2a2f4ca66c42' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
