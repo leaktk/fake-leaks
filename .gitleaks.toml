@@ -4,6 +4,9 @@
     '''ignore\.d''',
     '''\.?gitleaks.toml$''',
   ]
+  regexes = [
+    # '''custom-regexes-to-ignore-here''',
+  ]
 
 # [[rules]] are not picked up by the LeakTK scanning service but could be picked up by the pre-commit hook.
 [[rules]]
