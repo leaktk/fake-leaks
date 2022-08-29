@@ -1,5 +1,5 @@
 [allowlist]
-  description = "Allowlist"
+  description = "Repo Allowlist"
   paths = [
     '''ignore\.d''',
     '''\.?gitleaks.toml$''',
