@@ -2,9 +2,14 @@
 [allowlist]
   description = "Repo Allowlist"
   paths = [
-    # Some test ignores for working with the scanner's unit tests
+    # Ignore any path with ignore.d in it
     '''ignore\.d''',
+
+    # Ignore all files ending in .ignore.txt
     '''\.ignore\.txt$''',
+
+    # An example of a full path
+    '''examples\/some\/long\/path\/server.key$''',
 
     # Ignore the .gitleaks.toml
     '''\.gitleaks\.toml$''',
