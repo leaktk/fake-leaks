@@ -1,15 +1,10 @@
 # Should Not Match
 # Should ignore based on the filename
------BEGIN EC PRIVATE KEY-----
-# Should Not Match
-# Should ignore based on the filename
------BEGIN PGP PRIVATE KEY-----
-# Should Not Match
-# Should ignore based on the filename
------BEGIN DSA PRIVATE KEY-----
-# Should Not Match
-# Should ignore based on the filename
------BEGIN RSA PRIVATE KEY-----
-# Should Not Match
-# Should ignore based on the filename
 -----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAACmFlczI1Ni1jdHIAAAAGYmNyeXB0AAAAGAAAABByFyizVq
+/GceML9pVSbcLUAAAAGAAAAAEAAAAzAAAAC3NzaC1lZDI1NTE5AAAAIE8TfDaQ7/PzRCoD
+Btb6Lfp5DBOw6essIrTnCd+W+FBvAAAAoHDN1GRcbcG6BtMUnfYr0or2OJzXX2iN94N1Q8
+5dZL3uPyjzzy+x0s8N+F/WhAt67KQgNMbsA1npcOMNox9tUoaYiXv6c0HIkWbAn40XD3T1
+fQw4OBzcKrrueCbjpHT1DuCInRZz9xK3O6mMTpEcIeZrHHDkjUDv7fNkg75uIfzZlSkHyi
+c/y3gJub6vZYsz4ZNVlX5vQFd5sppC3BvJhEg=
+-----END OPENSSH PRIVATE KEY-----
