@@ -1,0 +1,1015 @@
+# Should Match
+# Different types of password hashes
+$y$j9T$OO/cvWZ17nxP6XzO1jNt5/$wtUrYmUAzg6p1hdQ/WJtsjq7gJ6if4dP6LcDlXedZU6
+
+# Should Match
+# Different types of password hashes
+$gy$j9T$7Q9Z.KDwQ06akx6VxwMpn.$en8X0EUE.xdbTSDZlftyzqDEcXaU7rORvdWLhaPygB2
+
+# Should Match
+# Different types of password hashes
+$2b$05$YuHSRtnwiF7AbEd3Xe9rauK0N8EHKHoajjAPQz/29QMGdbisxy.3.
+
+# Should Match
+# Different types of password hashes
+$6$cjvUY6xnMEVNYUv6$ttG2bz2lglfS4rliP.T7Ozaak7bPVg5ccZ.E.H5F09jIOfvG/yJb5nfQ3tN6uMiH7Z1t/AXDHUgD5xdqE6MUu1
+
+# Should Match
+# Different types of password hashes
+$5$8pFTUnUr.HhP3O52$Fl1S4nX1p0PONBIcG7PN5jTQAtulYNf2AQCJyXV6Dt.
+
+# Should Match
+# Different types of password hashes
+$md5,rounds=89650$IU7ELX9N$$VUWQHUYZkb7n3SpAmBHq0/
+
+# Should Match
+# Different types of password hashes
+$1$lMsBjmBR$3UpSfv5QTMtGoneFKCIJW1
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+password = 'swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw' 
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+password = '1b3d576ba5a108c3b7374142bfd02992' notasecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+password = '2b3d576ba5a108c3b7374142bfd02992' yonotsecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+password = '3b3d576ba5a108c3b7374142bfd02992' 'notsecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+password = '4b3d576ba5a108c3b7374142bfd02992' notsecret'
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+password = '5b3d576ba5a108c3b7374142bfd02992' notsecretyo
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret= 'swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw' 
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret= '1b3d576ba5a108c3b7374142bfd02992' notasecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret= '2b3d576ba5a108c3b7374142bfd02992' yonotsecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret= '3b3d576ba5a108c3b7374142bfd02992' 'notsecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret= '4b3d576ba5a108c3b7374142bfd02992' notsecret'
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret= '5b3d576ba5a108c3b7374142bfd02992' notsecretyo
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret_key": "swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw" 
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret_key": "1b3d576ba5a108c3b7374142bfd02992" notasecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret_key": "2b3d576ba5a108c3b7374142bfd02992" yonotsecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret_key": "3b3d576ba5a108c3b7374142bfd02992" 'notsecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret_key": "4b3d576ba5a108c3b7374142bfd02992" notsecret'
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret_key": "5b3d576ba5a108c3b7374142bfd02992" notsecretyo
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret_access_key": "swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw" 
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret_access_key": "1b3d576ba5a108c3b7374142bfd02992" notasecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret_access_key": "2b3d576ba5a108c3b7374142bfd02992" yonotsecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret_access_key": "3b3d576ba5a108c3b7374142bfd02992" 'notsecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret_access_key": "4b3d576ba5a108c3b7374142bfd02992" notsecret'
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret_access_key": "5b3d576ba5a108c3b7374142bfd02992" notsecretyo
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret_accesskey": "swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw" 
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret_accesskey": "1b3d576ba5a108c3b7374142bfd02992" notasecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret_accesskey": "2b3d576ba5a108c3b7374142bfd02992" yonotsecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret_accesskey": "3b3d576ba5a108c3b7374142bfd02992" 'notsecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret_accesskey": "4b3d576ba5a108c3b7374142bfd02992" notsecret'
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret_accesskey": "5b3d576ba5a108c3b7374142bfd02992" notsecretyo
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+SecretAccessKey": "swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw" 
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+SecretAccessKey": "1b3d576ba5a108c3b7374142bfd02992" notasecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+SecretAccessKey": "2b3d576ba5a108c3b7374142bfd02992" yonotsecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+SecretAccessKey": "3b3d576ba5a108c3b7374142bfd02992" 'notsecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+SecretAccessKey": "4b3d576ba5a108c3b7374142bfd02992" notsecret'
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+SecretAccessKey": "5b3d576ba5a108c3b7374142bfd02992" notsecretyo
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret=swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw  
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret=1b3d576ba5a108c3b7374142bfd02992  notasecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret=2b3d576ba5a108c3b7374142bfd02992  yonotsecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret=3b3d576ba5a108c3b7374142bfd02992  'notsecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret=4b3d576ba5a108c3b7374142bfd02992  notsecret'
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+secret=5b3d576ba5a108c3b7374142bfd02992  notsecretyo
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+api_key=swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw  
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+api_key=1b3d576ba5a108c3b7374142bfd02992  notasecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+api_key=2b3d576ba5a108c3b7374142bfd02992  yonotsecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+api_key=3b3d576ba5a108c3b7374142bfd02992  'notsecret
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+api_key=4b3d576ba5a108c3b7374142bfd02992  notsecret'
+
+# Should Match
+# Test Genearl Secret with optional notsecret tag
+api_key=5b3d576ba5a108c3b7374142bfd02992  notsecretyo
+
+# Should Match
+# this searches for "iss":"argocd"
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJsZWFrdGsiLCJub3RlIjoiZm9yIHRlc3RpbmcgQXJnb0NEIG1hdGNoZXMiLCJ4IjoieHh4IiwiaXNzIjoiYXJnb2NkIn0.VJXhFqDs4FGGHPznFO8ZkwiteXL5sLMeUaGGEXS02h4
+
+# Should Match
+# this searches for "iss":"argocd"
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJsZWFrdGsiLCJub3RlIjoiZm9yIHRlc3RpbmcgQXJnb0NEIG1hdGNoZXMiLCJpc3MiOiJhcmdvY2QifQ.IMSC5Gl6CavUctOoILAcHN4YAsH3ihQz7l6mDobClXw
+
+# Should Match
+# this searches for "iss":"argocd"
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJsZWFrdGsiLCJub3RlIjoiZm9yIHRlc3RpbmcgQXJnb0NEIG1hdGNoZXMiLCJ4IjoieCIsImlzcyI6ImFyZ29jZCJ9.kHldeGEECY3basc-aTT-3eQvellg8T02h8M02M3v3c0
+
+# Should Match
+# this searches for "iss":"kubernetes/serviceaccount"
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJsZWFrdGsiLCJub3RlIjoiZm9yIHRlc3RpbmcgS3ViZSBTQSBtYXRjaGVzIiwieCI6IngiLCJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50In0.5BTklQydvs6yaPgO6MJoSDk89wZjX8QMJ51m5bMCHx8
+
+# Should Match
+# this searches for "iss":"kubernetes/serviceaccount"
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJsZWFrdGsiLCJub3RlIjoiZm9yIHRlc3RpbmcgS3ViZSBTQSBtYXRjaGVzIiwieCI6Inh4IiwiaXNzIjoia3ViZXJuZXRlcy9zZXJ2aWNlYWNjb3VudCJ9.t8R0N8jjMXv_4E9JKwGfJ5hrsO3del5oJpD6j66O-VU
+
+# Should Match
+# this searches for "iss":"kubernetes/serviceaccount"
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJsZWFrdGsiLCJub3RlIjoiZm9yIHRlc3RpbmcgS3ViZSBTQSBtYXRjaGVzIiwieCI6Inh4eCIsImlzcyI6Imt1YmVybmV0ZXMvc2VydmljZWFjY291bnQifQ.JLGKRW3i-CMu5Y_p0y1cgNFokjyVJjs6zO3g_P5nawQ
+
+# Should Match
+# this searches for "sub":"system:serviceaccount:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6b3BlbnNoaWZ0LW1vbml0b3Jpbmc6cHJvbWV0aGV1cy1rOHMiLCJuYW1lIjoiSm9obiBEb2UiLCJpYXQiOjE1MTYyMzkwMjJ9.ipzDwTMDecOi1y3PCnr18juUFF9KryIreesxYUlC3AI
+
+# Should Match
+# this searches for "sub":"system:serviceaccount:
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6Zm9vIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.68gxpqTqhOhCGxXPe3D86xblMnRc2ciGYn-SMG78IDE
+
+# Should Match
+# Should capture in-line container registry secrets
+"quay.io": { "auth": "0ec7f53a0637bb3d78ab613e02014934" }
+
+# Should Match
+# Should capture in-line container registry secrets
+"docker.io": { "auth": "1ec7f53a0637bb3d78ab613e02014934" }
+
+# Should Match
+# Should capture in-line container registry secrets
+"foo.bar.redhat.io": { "auth": "2ec7f53a0637bb3d78ab613e02014934" }
+
+# Should Match
+# Should capture in-line container registry secrets
+"foo.bar.redhat.com": { "auth": "3ec7f53a0637bb3d78ab613e02014934" }
+
+# Should Match
+# Should capture in-line container registry secrets
+"foo.bar.openshift.com": { "auth": "4ec7f53a0637bb3d78ab613e02014934" }
+
+# Should Match
+# Should capture in-line container registry secrets
+"foo.bar.openshift.io": { "auth": "5ec7f53a0637bb3d78ab613e02014934" }
+
+# Should Match
+# Should capture in-line container registry secrets
+\"quay.io\": { \"auth\": \"0ec7f53a0637bb3d78ab613e02014934\" }
+
+# Should Match
+# Should capture in-line container registry secrets
+\"docker.io\": { \"auth\": \"1ec7f53a0637bb3d78ab613e02014934\" }
+
+# Should Match
+# Should capture in-line container registry secrets
+\"foo.bar.redhat.io\": { \"auth\": \"2ec7f53a0637bb3d78ab613e02014934\" }
+
+# Should Match
+# Should capture in-line container registry secrets
+\"foo.bar.redhat.com\": { \"auth\": \"3ec7f53a0637bb3d78ab613e02014934\" }
+
+# Should Match
+# Should capture in-line container registry secrets
+\"foo.bar.openshift.com\": { \"auth\": \"4ec7f53a0637bb3d78ab613e02014934\" }
+
+# Should Match
+# Should capture in-line container registry secrets
+\"foo.bar.openshift.io\": { \"auth\": \"5ec7f53a0637bb3d78ab613e02014934\" }
+
+# Should Match
+# Should capture in-line container registry secrets
+example comes from the test above
+
+# Should Match
+# Should capture in-line container registry secrets
+example comes from the test above
+
+# Should Match
+# Should capture in-line container registry secrets
+example comes from the test above
+
+# Should Match
+# Should capture in-line container registry secrets
+example comes from the test above
+
+# Should Match
+# Should capture in-line container registry secrets
+example comes from the test above
+
+# Should Match
+# Should capture in-line container registry secrets
+example comes from the test above
+
+# Should Match
+# Should capture in-line container registry secrets
+example comes from the test above
+
+# Should Match
+# Should capture in-line container registry secrets
+example comes from the test above
+
+# Should Match
+# Should capture in-line container registry secrets
+example comes from the test above
+
+# Should Match
+# Should capture in-line container registry secrets
+example comes from the test above
+
+# Should Match
+# Should capture in-line container registry secrets
+example comes from the test above
+
+# Should Match
+# Should capture in-line container registry secrets
+example comes from the test above
+
+# Should Match
+# We're starting to look for more registries
+"example.com": { "auth": "9ec7f53a0637bb3d78ab613e02014934" }
+
+# Should Match
+# Should capture encoded container registry secrets
+.dockerconfigjson: 0eyJhdXRocyI6IHsibG9jYWxob3N0IjogImF1dGgiOiAibXdhaGFoYWhhaGFoYWhhIn19Cgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa==
+
+# Should Match
+# Should capture encoded container registry secrets
+.dockerconfigjson: 0eyJhdXRocyI6IHsiIjoge30sICJsb2NhbGhvc3QiOiAiYXV0aCI6ICJtd2FoYWhhaGFoYWhhaGEifX0Kaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+# Should Match
+# Should capture encoded container registry secrets
+.dockerconfigjson: 0ZG9ja2VyY29uZmlnOiB7ImF1dGhzIjogeyIiOiB7fSwgImxvY2FsaG9zdCI6ICJhdXRoIjogIm13YWhhaGFoYWhhaGFoYSJ9fQoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa=
+
+# Should Match
+# Should capture encoded container registry secrets
+.dockerconfigjson: 0YXsiYXV0aHMiOiB7IiI6IHt9LCAibG9jYWxob3N0IjogImF1dGgiOiAibXdhaGFoYWhhaGFoYWhhIn19Cgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa==
+
+# Should Match
+# Should capture encoded container registry secrets
+.dockerconfigjson: 0YXsiYXV0aHMiOiBieyIiOiB7fSwgImxvY2FsaG9zdCI6ICJhdXRoIjogIm13YWhhaGFoYWhhaGFoYSJ9fQoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa=
+
+# Should Match
+# Should capture encoded container registry secrets
+.dockerconfigjson: 0YTl7ImF1dGhzIjogYnsiIjoge30sICJsb2NhbGhvc3QiOiAiYXV0aCI6ICJtd2FoYWhhaGFoYWhhaGEifX0Kaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+# Should Match
+# Should capture encoded container registry secrets
+.dockerconfigjson: 0MGE5eyJhdXRocyI6IGJ7IiI6IHt9LCAibG9jYWxob3N0IjogImF1dGgiOiAibXdhaGFoYWhhaGFoYWhhIn19Cgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa==
+
+# Should Match
+# Should capture encoded container registry secrets
+.dockerconfigjson: 0MGE5eyJhdXRocyI6IGJ7IiI6IHt9LCAicmVkaGF0LmlvIjogImF1dGgiOiAibXdhaGFoYWhhaGFoYWhhIn19Cgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa==
+
+# Should Match
+# Should capture encoded container registry secrets
+Data: "1eyJhdXRocyI6IHsibG9jYWxob3N0IjogImF1dGgiOiAibXdhaGFoYWhhaGFoYWhhIn19Cgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa=="
+
+# Should Match
+# Should capture encoded container registry secrets
+Data: "1eyJhdXRocyI6IHsiIjoge30sICJsb2NhbGhvc3QiOiAiYXV0aCI6ICJtd2FoYWhhaGFoYWhhaGEifX0Kaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+
+# Should Match
+# Should capture encoded container registry secrets
+Data: "1ZG9ja2VyY29uZmlnOiB7ImF1dGhzIjogeyIiOiB7fSwgImxvY2FsaG9zdCI6ICJhdXRoIjogIm13YWhhaGFoYWhhaGFoYSJ9fQoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa="
+
+# Should Match
+# Should capture encoded container registry secrets
+Data: "1YXsiYXV0aHMiOiB7IiI6IHt9LCAibG9jYWxob3N0IjogImF1dGgiOiAibXdhaGFoYWhhaGFoYWhhIn19Cgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa=="
+
+# Should Match
+# Should capture encoded container registry secrets
+Data: "1YXsiYXV0aHMiOiBieyIiOiB7fSwgImxvY2FsaG9zdCI6ICJhdXRoIjogIm13YWhhaGFoYWhhaGFoYSJ9fQoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa="
+
+# Should Match
+# Should capture encoded container registry secrets
+Data: "1YTl7ImF1dGhzIjogYnsiIjoge30sICJsb2NhbGhvc3QiOiAiYXV0aCI6ICJtd2FoYWhhaGFoYWhhaGEifX0Kaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+
+# Should Match
+# Should capture encoded container registry secrets
+Data: "1MGE5eyJhdXRocyI6IGJ7IiI6IHt9LCAibG9jYWxob3N0IjogImF1dGgiOiAibXdhaGFoYWhhaGFoYWhhIn19Cgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa=="
+
+# Should Match
+# Should capture encoded container registry secrets
+Data: "1MGE5eyJhdXRocyI6IGJ7IiI6IHt9LCAicmVkaGF0LmlvIjogImF1dGgiOiAibXdhaGFoYWhhaGFoYWhhIn19Cgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa=="
+
+# Should Match
+# AWS Account ID
+arn:aws:iam::128157789812:root
+
+# Should Match
+# Should capture slack tokens
+xoxp-9204568914-1834568914-1234568914-a53ka1rJ2KAIuj3jalakjalkjaafc
+
+# Should Match
+# Should capture container registry passwords.
+reg := registry.New("quay.io", "user", "09e25b6fc894c83868715a8cce1ba7d2") // remove later
+
+# Should Match
+# Detect tokens for the OpenShift login command
+oc login --some-opt --token=sha256~CL9vOGM0koa67eipnogHwP6KmfeAOd6ZwMo88Qo3-Kw --foo --bar --baz
+
+# Should Match
+# Even though this looks like it has a variable at the end, it still has a secret contained in it
+secret='/YNvEGXEXY9BS/YNvE:${asdf.YNvEGXEXY9BS}'
+
+# Should Match
+# Even though this looks like it has a variable at the end, it still has a secret contained in it
+secret='aOObST8cGSeh3cYNvEGXEXY9BShQx1EtRdfZ=${asdfae}'
+
+# Should Match
+# Should capture Google API keys
+Some google key yo AIzaOObST8cGSeh3cYNvEGXEXY9BShQx1EtRdfZ yep here it be!
+
+# Should Match
+# Should capture Mailgun API keys
+Mailgun_API_KEY=key-fb959af04c12d5d66091256c2b2076d0
+
+# Should Match
+# Should capture aws access keys
+AWS_ACCESS_KEY=A3TGOBTGY4DIMRXMIYGE
+
+# Should Match
+# Should capture aws secret keys
+  AWSSecretKey=af60f112a534df0cc1e4d892b5768f3easefasza foo=bar
+
+# Should Match
+# Should capture aws secret keys
+  AWSSecretKey="aF6/f1+2a534df0cc1e4d892b5768f3easefaszb" foo=bar
+
+# Should Match
+# Should capture aws secret keys
+  "aws_secret_key": "Af60f112a534df0cc1e4d892b5768f3easef/+zc" foo=bar
+
+# Should Match
+# Should capture private key headers
+-----BEGIN PGP PRIVATE KEY-----
+
+# Should Match
+# Should capture private key headers
+-----BEGIN OPENSSH PRIVATE KEY-----\n0b3d576ba5a108c3b7374142bfd029920b3d576ba5a108c3b7374142bfd029920b3d576ba5a108c3b7374142bfd02992\n-----END OPENSSH PRIVATE KEY-----
+
+# Should Match
+# make sure it captures the password but stops at the quote
+password = "0b3d576ba5a108c3b7374142bfd02992", some = "other value", example="example"
+
+# Should Match
+# make sure mixed case with dashes is caught
+password = "Lol-IKR-those-kids-R-Krazy"
+
+# Should Match
+# make sure lower case with dashes and numbers is caught
+password = "l0l-1kr-th0se-k1ds-r-kr4zy"
+
+# Should Match
+# make sure it captures the password but stops at the quote
+{"password": "3ae68d9f8ccfc898ee2555a5f8f228b9", "foo": "bar"}
+
+# Should Match
+# Make sure the entropy check allows this
+password = "RAW(kx#2+c7a)"
+
+# Should Match
+# Make sure the password works with xml formatted stuff
+<password>$A3ae68d9f8ccfc898ee2555a5f8f228b9</password>
+
+# Should Match
+# Make sure it can handle weird formatted stuff
+<FooPassword id="new" >$A3ae68d9f8ccfc898ee2555a5f8f228b9</FooPassword><bar>baz</bar>
+
+# Should Match
+# make sure it captures the secret but stops at the quote
+secret = "$A0b3d576ba5a108c3b7374142bfd02992", some = "other value"
+
+# Should Match
+# make sure it captures the secret and can include _key
+secret_key = "766a929d93c9ef30ce3d72d6384eb6fa"
+
+# Should Match
+# make sure it captures the secret and can include -key
+secret-key = "766a929d93c9ef30ce3d72d6384eb6fa"
+
+# Should Match
+# make sure it captures the secret but stops at the quote
+{"secret": "$A3ae68d9f8ccfc898ee2555a5f8f228b9", "foo": "bar"}
+
+# Should Match
+# Make sure the entropy check allows this
+secret = "RAW(kx#2+c7a)"
+
+# Should Match
+# Make sure the secret works with xml formatted stuff
+<secret>$A3ae68d9f8ccfc898ee2555a5f8f228b9</secret>
+
+# Should Match
+# Make sure it can handle weird formatted stuff
+<FooSecret id="new" >$A3ae68d9f8ccfc898ee2555a5f8f228b9</FooSecret><bar>baz</bar>
+
+# Should Match
+# WP DB Password
+define(    'DB_PASSWORD', '$c8e$743df9d386d895}');
+
+# Should Match
+# WP DB Auth Key
+define('AUTH_KEY',         'kzgllO;k$F_-W68 Fl*iEekX;-pn =fNS(;c9nDKt;5RW(&jtESXsW9+PhQFS!Tv');
+
+# Should Match
+# Secure Auth Key
+define('SECURE_AUTH_KEY',  ',,F|NHKh>=+y.gy%B32Ff!s~MJp$L,]~xEK|e3H)7| 4hX]!/Ky@V(esZa?0D#H*');
+
+# Should Match
+# Logged In Key
+define('LOGGED_IN_KEY',    'k7o7@~oee{u,MG KFBJq0M`-iJ0H0hs)m-@i/RsgwZ{No~JQ+)2A<Ryd+|t<8.[a');
+
+# Should Match
+# Nonce Key
+define('NONCE_KEY',        'f54j6Auj0NT8g;5-^zk}yZ`vN^8/7!6=%5bS>GUu{04~#E*a~WdGX<%>Aa<Ke}K8');
+
+# Should Match
+# Auth Salt
+define('AUTH_SALT',        '?PULIL7?y%Ub=[~rw+5Pg^!$UrrOpn*Pr(MFBdF-+ZMH#oKsZ{KskZY9m/i|<pkK');
+
+# Should Match
+# Secure Auth Salt
+define('SECURE_AUTH_SALT', 'of~0;WuAmEBP4~rfM)1Q.Oc0U=g^t|d%h.Ui8w<v4;A47FGs0}@Hk>&g?p*hDoQs');
+
+# Should Match
+# Logged In Salt
+define('LOGGED_IN_SALT',   'WTc*{p+XT((_#^NxhoU)[7NAg};Q?`+0wpkia>oA]hF-TB2lC GM!~aM=-Hqw4,+');
+
+# Should Match
+# Nonce Salt
+define('NONCE_SALT',       '^[_9^w_,UPMuJ2-}7=y<|v=y$#xftY[klEW3zt,Y}bB tG4d):p9Fd;$imF[lGqR');
+
+# Should Match
+# See https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#githubs-token-formats
+<access-token>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</access-token>
+
+# Should Match
+# See https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#githubs-token-formats
+<access-token>ghp_16C7e42F292c6912E7710c838347Ae178B4a</access-token>
+
+# Should Match
+# See https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#githubs-token-formats
+token='gho_16C7e42F292c6912E7710c838347Ae178B4a'
+
+# Should Match
+# See https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#githubs-token-formats
+'gt-token': 'ghu_16C7e42F292c6912E7710c838347Ae178B4a'
+
+# Should Match
+# See https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#githubs-token-formats
+ghs_16C7e42F292c6912E7710c838347Ae178B4a
+
+# Should Match
+# See https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#githubs-token-formats
+ghr_16C7e42F292c6912E7710c838347Ae178B4a
+
+# Should Match
+# From gitlab.com
+my_cred=glpat-LwnfdsSHX1aSGxsqsPUX
+
+# Should Match
+# From gitlab.com
+trigger_sec=glptt-bcce2270d3c9c90c0a4320b6e8742fb450c27cc9
+
+# Should Match
+# From gitlab.com
+runner_sec=glrt-64NXmvdxFL_9cliRha7y
+
+# Should Match
+# From gitlab.com
+runner_sec=GR134894164NXmvdxFL_9cliRha7y
+
+# Should Match
+# Should catch PyPI upload tokens
+Foo bar baz pypi-AgEIcHlwaS5vcmcCJDU0ZTIxMWRiLWNlMjYtNDM3ZS05YjJlLWYzYTk5NmE2NGJjMgACJXsicGVybWlzc2lvbnMiOiAidXNlciIsICJ2ZXJzaW9uIjogMX0AAAYgWzvnJ7sF-57Jw_YGg04aZTPCeuRpXrHBhAsPRfofZGc foo
+
+# Should Match
+# Should capture basic auth for http
+http://username:1d902de68e4113f5855a6c88314cec6a@host/foo/bar/baz
+
+# Should Match
+# Should capture basic auth for https
+https://username:2d902de68e4113f5855a6c88314cec6a@host
+
+# Should Match
+# Should catch protocols other than http
+rsync://username:9d902de68e4113f5855a6c88314cec6a@host
+
+# Should Match
+# Should capture a SG api key
+key='SG.9C07-916Ee9X80Yd0b32M3f27922.9C07-916-e9XL0Yaaxad0b32M3f27922'
+
+# Should Match
+# Example of an NPM Access Token
+npm_0Uad0raLM5saR4HOZsEpRxar6x2Kji2ULDcl
+
+# Should Match
+# Example of an NPM Access Token
+value=npm_1Uad0raLM5saR4HOZsEpRxar6x2Kji2ULDcl# Should Not Match
+# Likely encrypted values
+secret='ENC[RSA,tUf83Ex0oSbDGa8vaU1hGqesODG9J4j40EgLClQYrwNT]'
+# Should Not Match
+# Likely encrypted values
+secret='RU5DW1JTQSx0VWY4M0V4MG9TYkRHYTh2YVUxaEdxZXNPREc5SjRqNDBFZ0xDbFFZcndOVF0='
+# Should Not Match
+# Likely encrypted values
+secret='ENC[AES256_GCM,tUf83Ex0oSbDGa8vaU1hGqesODG9J4j40EgLClQYrwNT]'
+# Should Not Match
+# Likely encrypted values
+secret='RU5DW0FFUzI1Nl9HQ00sdFVmODNFeDBvU2JER2E4dmFVMWhHcWVzT0RHOUo0ajQwRWdMQ2xRWXJ3TlRd'
+# Should Not Match
+# Likely encrypted values
+secret_key='ENC[RSA,tUf83Ex0oSbDGa8vaU1hGqesODG9J4j40EgLClQYrwNT]'
+# Should Not Match
+# Likely encrypted values
+secret_key='RU5DW1JTQSx0VWY4M0V4MG9TYkRHYTh2YVUxaEdxZXNPREc5SjRqNDBFZ0xDbFFZcndOVF0='
+# Should Not Match
+# Likely encrypted values
+secret_key='ENC[AES256_GCM,tUf83Ex0oSbDGa8vaU1hGqesODG9J4j40EgLClQYrwNT]'
+# Should Not Match
+# Likely encrypted values
+secret_key='RU5DW0FFUzI1Nl9HQ00sdFVmODNFeDBvU2JER2E4dmFVMWhHcWVzT0RHOUo0ajQwRWdMQ2xRWXJ3TlRd'
+# Should Not Match
+# Likely encrypted values
+password='ENC[RSA,tUf83Ex0oSbDGa8vaU1hGqesODG9J4j40EgLClQYrwNT]'
+# Should Not Match
+# Likely encrypted values
+password='RU5DW1JTQSx0VWY4M0V4MG9TYkRHYTh2YVUxaEdxZXNPREc5SjRqNDBFZ0xDbFFZcndOVF0='
+# Should Not Match
+# Likely encrypted values
+password='ENC[AES256_GCM,tUf83Ex0oSbDGa8vaU1hGqesODG9J4j40EgLClQYrwNT]'
+# Should Not Match
+# Likely encrypted values
+password='RU5DW0FFUzI1Nl9HQ00sdFVmODNFeDBvU2JER2E4dmFVMWhHcWVzT0RHOUo0ajQwRWdMQ2xRWXJ3TlRd'
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:$(TOKEN)@host.domain.com:443
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:$TOKEN@host.domain.com:443
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:$encrypted$@host.domain.com:443
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:${TOKEN}@host.domain.com:443
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:%q@host.domain.com:443
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:&lt;password&gt;@host.domain.com:443
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:[TOKEN]@host.domain.com:443
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:\${GHTOKEN}@host.domain.com:443
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:__MONGO_PASSWORD__@host.domain.com:443
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:candlepin@host.domain.com:443
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:default@host.domain.com:443
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:keylime@host.domain.com:443
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:password@host.domain.com:443
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:password-foo-bar-baz@host.domain.com:443
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:postgres@host.domain.com:443
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:prisma@host.domain.com:443
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:rabbitmq@host.domain.com:443
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:redhat@host.domain.com:443
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:some-placeholder-token@host.domain.com:443
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:userpass@host.domain.com:443
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:{TOKEN}@host.domain.com:443
+# Should Not Match
+# URL default passwords or placeholders
+scheme://user:"$TOKEN"@host.domain.com:443
+# Should Not Match
+# FP/Placeholder in URL User and Password
+https?://_<username>_[:_<password>_]@_<hostname>_/_<path>_
+# Should Not Match
+# FP/Placeholder in URL User and Password
+https://f4c38c5:$githubpac@github.com
+# Should Not Match
+# FP/Placeholder in URL User and Password
+https://f4c38c5:27BZdTpuIl9u...pE+SpU4C2vQSY=@github.com
+# Should Not Match
+# FP/Placeholder in URL User and Password
+http://username:pGeGXSEFgGSogv48jcTFaJip@ip:port
+# Should Not Match
+# FP/Placeholder in URL User and Password
+http://username:pGeGXSEFgGSogv48jcTFaJip@example.com
+# Should Not Match
+# FP/Placeholder in URL User and Password
+https://test:adfa;dkj;aek;j@example.com
+# Should Not Match
+# FP/Placeholder in URL User and Password
+https://test:adfa;dkj;aek;j@git.example.com
+# Should Not Match
+# FP/Placeholder in URL User and Password
+https://examle.com/foo:current@Cacheable
+# Should Not Match
+# FP/Placeholder in URL User and Password
+http://some-host:8080,org.java.stuff@1fc032aa
+# Should Not Match
+# FP/Placeholder in URL User and Password
+http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+
+# Should Not Match
+# Wordpress placeholder values
+define('AUTH_KEY', '${AUTH_KEY}');
+# Should Not Match
+# Wordpress placeholder values
+define('AUTH_KEY', '{{AUTH_KEY}}');
+# Should Not Match
+# Wordpress placeholder values
+define('AUTH_KEY', '$WP_AUTH_KEY');
+# Should Not Match
+# Wordpress placeholder values
+define('SECURE_AUTH_KEY', '$WP_SECURE_AUTH_KEY');
+# Should Not Match
+# Wordpress placeholder values
+define('LOGGED_IN_KEY', '$WP_LOGGED_IN_KEY');
+# Should Not Match
+# Wordpress placeholder values
+define('NONCE_KEY', '$WP_NONCE_KEY');
+# Should Not Match
+# Wordpress placeholder values
+define('AUTH_SALT', '$WP_AUTH_SALT');
+# Should Not Match
+# Wordpress placeholder values
+define('SECURE_AUTH_SALT', '$WP_SECURE_AUTH_SALT');
+# Should Not Match
+# Wordpress placeholder values
+define('LOGGED_IN_SALT', '$WP_LOGGED_IN_SALT');
+# Should Not Match
+# Wordpress placeholder values
+define('NONCE_SALT', '$WP_NONCE_SALT');
+# Should Not Match
+# placeholder value
+oc login --some-opt --token=sha256~<some-token-here-yo> --server=localhost
+# Should Not Match
+# redacted container registry auth
+{"auths":{"cloud.openshift.com":{"auth":"TJpnU0y1pDBkEKTcwzSAaoNV3jmkZz66LM4Jd6EBx0I.....TJpnU0y1pDBkEKTcwzSAaoNV3jmkZz66LM4Jd6EBx0I==","email":"user@example.com"},"quay.io":{"auth":"TJpnU0y1pDBkEKTcwzSAaoNV3jmkZz66LM4Jd6EBx0INo...","email":"user@example.com"},"
+# Should Not Match
+# placeholder wrappet in cdata tags
+<password><![CDATA[${password}]]></password>
+# Should Not Match
+# Placeholder
+<Password>$SomePlaceholderForAdminPassword$</Password>
+# Should Not Match
+# Placeholder
+<Password><![CDATA[$SomePlaceholderForAdminPassword$]]></Password>
+# Should Not Match
+# This is just code looking for headers
+if (privateKey === "-----BEGIN RSA PRIVATE KEY-----") {
+# Should Not Match
+# This is just code looking for headers
+where("-----BEGIN RSA PRIVATE KEY-----")
+# Should Not Match
+# Redacted value
+-----BEGIN PRIVATE KEY-----*******************************************************************************-----END PRIVATE KEY-----
+# Should Not Match
+# Redacted value
+-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBg...W17oy4Qgj7OLNB\n-----END PRIVATE
+# Should Not Match
+# Marked noqa:
+-----BEGIN OPENSSH PRIVATE KEY-----\nlt7wX0QyM7vNmbZovwIRLcWkRq_NFsWzR8VR_XYOQAy7K9g4MrAjiwuJjzz7PmEmaguxNK1GURK2EZx2DRLZ9Alt7wX0QyM7vNmbZovwIRLcWkRq_NFsWzR8VR_XYOQAy7K9g4MrAjiwuJjzz7PmEmaguxNK1GURK2EZx2DRLZ9A\n-----END OPENSSH PRIVATE KEY----- # noqa: E501
+# Should Not Match
+# Code snippet
+out.write(("-----BEGIN PRIVATE KEY-----\n").getBytes(Charsets.UTF_8));
+# Should Not Match
+# test value
+testSomeKindOfKey = `-----BEGIN OPENSSH PRIVATE KEY-----\nlt7wX0QyM7vNmbZovwIRLcWkRq_NFsWzR8VR_XYOQAy7K9g4MrAjiwuJjzz7PmEmaguxNK1GURK2EZx2DRLZ9Alt7wX0QyM7vNmbZovwIRLcWkRq_NFsWzR8VR_XYOQAy7K9g4MrAjiwuJjzz7PmEmaguxNK1GURK2EZx2DRLZ9A\n-----END OPENSSH PRIVATE KEY-----`
+# Should Not Match
+# placeholder value
+-----BEGIN RSA PRIVATE KEY-----\nxxx\nxxx\nxxx\n-----END RSA PRIVATE KEY-----
+# Should Not Match
+# Part of a jq lookup
+jq -rj '"password: ",.some_password,"\n"'
+# Should Not Match
+# Contains EXAMPLE base64 encoded
+AWS_SECRET_ACCESS_KEY: RVhBTVBMRWlpdVdSRUhGY3JISTN6SzBMZGVub1Avc0tmOW9aejhhbXYyY29rNlBja1E9Cg==
+# Should Not Match
+# Ignore AWS access keys marked as samples
+Sample:<pre>AGPAIDCX94X8GQXML0OX</pre>
+# Should Not Match
+# Contains something that looks like an AWS access key
+YCu38AvUpJs01zHxja7Z9qhZWVAfjxP5H/A3TE8SENGWR1ZFQ206BR+Q06phGgStkRWAHCQ
+# Should Not Match
+# Contains a host later on so it looks like basic auth
+https://some.testing.server:443".\u0000[xxx\r\n[user@host
+# Should Not Match
+# Test Cert
+fake_cert = '-----BEGIN OPENSSH PRIVATE KEY-----
+# Should Not Match
+# Test Cert
+exampleCert = '-----BEGIN PRIVATE KEY-----
+# Should Not Match
+# Test Cert
+testCert = '-----BEGIN RSA PRIVATE KEY-----
+# Should Not Match
+# These are placeholder values
+"secret": "__GITLAB_OAUTH_SECRET__"
+# Should Not Match
+# This is code
+@aws-cdk/aws-ecs:disableExplicitDeploymentControllerForCircuitBreaker
+# Should Not Match
+# Placeholder value
+"smtpSecret": "INSTALLATION_PREFIX-smtp",
+# Should Not Match
+# This is code
+@aws-cdk/aws-codepipeline:crossAccountKeyAliasStackSafeResourceName
+# Should Not Match
+# This is a presigned AWS URL
+https://s3.amazonaws.com/examplebucket/test.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=A3TGOBTGY4DIMRXMIYGE/20130721/us-east-1/s3/aws4_request&X-Amz-Date=20130721T201207Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=%3Csignature-value%3E
+# Should Not Match
+# Looks similar to a AWS secret key
+awslb/podsvc.yaml": testExtendedTestdataRouterAwslbPodsvcYaml
+# Should Not Match
+# Avoid matching things ending with = due to the high FP count
+ Af80f1/2+53=df0xc1e/d892b5768f3easefasz= 
+# Should Not Match
+# Allowed by gitleaks:allow
+AWS_ACCESS_KEY=A3TGOBTGY4DIMRXMIYGE #gitleaks:allow
+# Should Not Match
+# Allowed by gitleaks:allow different comment type
+AWS_ACCESS_KEY=A3TGOBTGY4DIMRXMIYGE // gitleaks:allow
+# Should Not Match
+# Looks really close to a SendGrid API Key's format
+WithSG.InterfacePropertiesFormat.IPConfigurations
+# Should Not Match
+# Placeholder slack token
+xoxp-some-slack-access-token-these-are-very-long-and-start-with-xo
+# Should Not Match
+# Placeholder slack token
+'token': 'xoxa-123456789abcdef',
+# Should Not Match
+# Meets the criteria for a potential aws secret key
+ b/drivers/media/platform/bcm2835/Kconfig
+# Should Not Match
+# contains a substring that looks like a google api key
+asdfasdfaeaAIzaOObST8cGSeh3cYNvEGXEXY9BShQx1EtRdfZasdfasmlajasdfasdfasdf
+# Should Not Match
+# Happens to have the right number of characters for an AWS key inside part of the URL
+http://mirror.centos.org/centos/8-stream/BaseOS/aarch64/os/Packages/libffi-3.1-23.el8.aarch64.rpm
+# Should Not Match
+# Not a facebook key
+7e90d3e171128c6e6fa038ff3cb5f387fb=7e90d3e171128c6e6fa038ff3cb5f387
+# Should Not Match
+# Shouldn't match such a short key
+-----BEGIN EC PRIVATE KEY-----\nkey\n-----END EC PRIVATE KEY-----
+# Should Not Match
+# Shouldn't match such a short key
+-----BEGIN RSA PRIVATE KEY-----\nREPLACE_ME\n-----END RSA PRIVATE KEY-----
+# Should Not Match
+# Shouldn't match an inline key with spaces in it
+-----BEGIN PRIVATE KEY-----\nMII.....RSA KEY WITHOUT LINEBREAKS\n-----END PRIVATE KEY-----
+# Should Not Match
+# placeholder value
+cps.Data["metadata"] = []byte("password: " + tokenValue + "
+username: NEW_VALUE")
+# Should Not Match
+# Ignore placeholders
+<FooPassword id="new" >{{PLACEHOLDER}}</FooPassword><bar>baz</bar>
+# Should Not Match
+# Ignore placeholders
+<FooPassword id="new" >{PLACEHOLDER}</FooPassword><bar>baz</bar>
+# Should Not Match
+# Ignore placeholders
+<FooPassword id="new" >$PLACEHOLDER_123</FooPassword><bar>baz</bar>
+# Should Not Match
+# Ignore placeholders
+<FooPassword id="new" >${PLACEHOLDER}</FooPassword><bar>baz</bar>
+# Should Not Match
+# UUID should not be matched
+<UserSecretsId>c007cd12-1fe7-4843-947e-ddecfc0d8913</UserSecretsId>
+# Should Not Match
+# Ignore placeholders
+<FooSecret id="new" >{{PLACEHOLDER}}</FooSecret><bar>baz</bar>
+# Should Not Match
+# Ignore placeholders
+<FooSecret id="new" >{PLACEHOLDER}</FooSecret><bar>baz</bar>
+# Should Not Match
+# Ignore placeholders
+<FooSecret id="new" >${PLACEHOLDER}</FooSecret><bar>baz</bar>
+# Should Not Match
+# Should not match because it's not in a htpasswd file
+user456:$jhI1AC9LG01KrQS$FzPCZHMe$jXiw5.8UevKx29pRH4AsT/
+# Should Not Match
+# this is close to the regex for an aws key
+_Somef0lder/or/Somepath/that0snotakeyyepa.sh
+# Should Not Match
+# It is too short to be a real token
+ghr_16C7e42F292c69
+# Should Not Match
+# ignore these arn matches
+administration_role_arn: arn:aws:iam::123456789012:role/AWSCloudFormationStackSetAdministrationRole
+# Should Not Match
+# ignore these arn matches
+arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly
+# Should Not Match
+# This isn't an AWS secret key! I promise!
+if awsEnvVars[i].Name == RegistryStorageS3RegionendpointEnvVarKey && bsl.Spec.Config[S3URL] != "" {
+# Should Not Match
+# Placeholder value for wordpress passwords
+define('DB_PASSWORD', 'password');
+# Should Not Match
+# Placeholder value for an Access Token
+GITHUB_PERSONAL_ACCESS_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# Should Not Match
+# Should not capture things formated like a mg api key without mg/mailgun in the prefix
+some-random-thing=key-fb959af04c12d5d66091256c2b2076d0
+# Should Not Match
+# from code
+os_password=sys.argv[3]
+# Should Not Match
+# ignore localhost db host in wp-config
+define("DB_HOST", "localhost");
+# Should Not Match
+# ignore placeholder slack-token
+token: xoxb-1234-56789abcdefghijklmnop
+# Should Not Match
+# ignore placeholder password
+password=\$MIRROR_OS_PASS&#34;
+# Should Not Match
+# ignore likely documentation
+password=&#34;placeholder&#34;,
+# Should Not Match
+# ignore likely documentation
+password=\u0026#34;placeholder&#34;,
+# Should Not Match
+# ignore likely placeholders
+secret=foo-baz_.baz
+# Should Not Match
+# Fake token
+AWS_TOKEN = "ABCDEFGHIJKLMNOPQRSTVWXYZabcdefghijklmnopqrstvwxyz0123=="
+# Should Not Match
+# Placeholder
+password=\$MIRROR_OS_PASS&#34;
+# Should Not Match
+# Just a comparison
+password===this.options.password}var
+# Should Not Match
+# Secret placeholder
+secret=@(some_client_secret)
+# Should Not Match
+# Secret placeholder
+secret=/data/stuff.auth
+# Should Not Match
+# Secret placeholder
+PASSWORD=${DatabasePassword:?
+# Should Not Match
+# Part of a regex for replacing passwords
+PASSWORD=.*/foobarbaz2aAfaea
+# Should Not Match
+# ignore unicode snippets for now
+PASSWORD=\u90DB\u10L8\u10XB\u1098
+# Should Not Match
+# AWS key placeholder
+aws_secret_access_key = ABCDEFGHIJKLMNOPQRSTUVWXYZabcd1234567890

@@ -1,0 +1,3 @@
+# Should Not Match
+# Not a htpasswd match
+jq '.spec.identityProviders += [{"htpasswd":{"fileData":{"name":"htpass-secret"}}...

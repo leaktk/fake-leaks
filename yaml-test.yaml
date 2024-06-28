@@ -1,0 +1,84 @@
+# Should Match
+# General secret tests for yaml rules
+secret: /XNvEGXEXY9B9/YNvEasdf.YNvEGXEXY9BS}
+
+# Should Match
+# General secret tests for yaml rules
+secretKey: /GNvEGXEXm9BS/YNvE:asdf.YNvEGXEXY9BS}
+
+# Should Match
+# General secret tests for yaml rules
+clientSecret: /GNvEGgEXY9BS/YNvEasdf.YNvEGXEXY9BS}
+
+# Should Not Match
+# placeholder value
+secret: auth-test-password
+# Should Not Match
+# placeholder value
+secret: <PLACEHOLDER>
+# Should Not Match
+# placeholder value
+secret: @@PLACEHOLDER@@
+# Should Not Match
+# placeholder value
+secret: %PLACEHOLDER%
+# Should Not Match
+# placeholder value
+secret: $PLACEHOLDER$
+# Should Not Match
+# placeholder value
+secret: __PLACEHOLDER__
+# Should Not Match
+# placeholder value
+secret: _PLACEHOLDER_
+# Should Not Match
+# placeholder value
+secret: ALL_UPPER_LETTERS_OR_UNDERSCORS
+# Should Not Match
+# placeholder value
+secret: {PLACEHOLDER}
+# Should Not Match
+# placeholder value
+secret: ${PLACEHOLDER}
+# Should Not Match
+# placeholder value
+secret: %{PLACEHOLDER}
+# Should Not Match
+# placeholder value
+secret: update-your-postgres-pass-here # a common placeholder setup
+# Should Not Match
+# placeholder value
+secret: Some...placeholder
+# Should Not Match
+# placeholder value
+secret: [%PLACEHOLDER%]
+# Should Not Match
+# placeholder value
+secret: [PLACEHOLDER]
+# Should Not Match
+# placeholder value
+secret: $(ls -l abcedafaca;lkj;lk)
+# Should Not Match
+# placeholder value
+secret: \$(ls -l aclkaj;ria;ka;ek;jrakj)
+# Should Not Match
+# placeholder value
+secret: SOME_CONSTANT_PREFIX_${PLACEHOLDER}
+# Should Not Match
+# placeholder value
+secret: /SOME/path:${PLACEHOLDER}
+# Should Not Match
+# placeholder value
+secret: $SOME_ENV_VARIABLE-optional-text
+# Should Not Match
+# placeholder value
+secret: \$SOME_ENV_VARIABLE-optional-text
+# Should Not Match
+# placeholder value
+secret: 377gjPEd3Wvo+3ojeGiknEVYQU1QTEUKRVhBTVBMRQo=
+# Should Not Match
+# placeholder value
+secret: sshPrivateKey
+# Should Not Match
+# placeholder value
+secret: foo bar baz
