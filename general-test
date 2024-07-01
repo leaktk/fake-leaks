@@ -28,7 +28,7 @@ $1$lMsBjmBR$3UpSfv5QTMtGoneFKCIJW1
 
 # Should Match
 # Test Genearl Secret with optional notsecret tag
-password = 'swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw' 
+password = 'swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw'
 
 # Should Match
 # Test Genearl Secret with optional notsecret tag
@@ -52,7 +52,7 @@ password = '5b3d576ba5a108c3b7374142bfd02992' notsecretyo
 
 # Should Match
 # Test Genearl Secret with optional notsecret tag
-secret= 'swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw' 
+secret= 'swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw'
 
 # Should Match
 # Test Genearl Secret with optional notsecret tag
@@ -76,7 +76,7 @@ secret= '5b3d576ba5a108c3b7374142bfd02992' notsecretyo
 
 # Should Match
 # Test Genearl Secret with optional notsecret tag
-secret_key": "swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw" 
+secret_key": "swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw"
 
 # Should Match
 # Test Genearl Secret with optional notsecret tag
@@ -100,7 +100,7 @@ secret_key": "5b3d576ba5a108c3b7374142bfd02992" notsecretyo
 
 # Should Match
 # Test Genearl Secret with optional notsecret tag
-secret_access_key": "swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw" 
+secret_access_key": "swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw"
 
 # Should Match
 # Test Genearl Secret with optional notsecret tag
@@ -124,7 +124,7 @@ secret_access_key": "5b3d576ba5a108c3b7374142bfd02992" notsecretyo
 
 # Should Match
 # Test Genearl Secret with optional notsecret tag
-secret_accesskey": "swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw" 
+secret_accesskey": "swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw"
 
 # Should Match
 # Test Genearl Secret with optional notsecret tag
@@ -148,7 +148,7 @@ secret_accesskey": "5b3d576ba5a108c3b7374142bfd02992" notsecretyo
 
 # Should Match
 # Test Genearl Secret with optional notsecret tag
-SecretAccessKey": "swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw" 
+SecretAccessKey": "swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw"
 
 # Should Match
 # Test Genearl Secret with optional notsecret tag
@@ -172,7 +172,7 @@ SecretAccessKey": "5b3d576ba5a108c3b7374142bfd02992" notsecretyo
 
 # Should Match
 # Test Genearl Secret with optional notsecret tag
-secret=swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw  
+secret=swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw
 
 # Should Match
 # Test Genearl Secret with optional notsecret tag
@@ -196,7 +196,7 @@ secret=5b3d576ba5a108c3b7374142bfd02992  notsecretyo
 
 # Should Match
 # Test Genearl Secret with optional notsecret tag
-api_key=swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw  
+api_key=swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw
 
 # Should Match
 # Test Genearl Secret with optional notsecret tag
@@ -465,6 +465,9 @@ AWS_ACCESS_KEY=A3TGOBTGY4DIMRXMIYGE
 # Should Match
 # Should capture private key headers
 -----BEGIN PGP PRIVATE KEY-----
+0b3d576ba5a108c3b7374142bfd029920b3d576ba5a108c3b7374142bfd0299
+20b3d576ba5a108c3b7374142bfd02992
+-----END PGP PRIVATE KEY-----
 
 # Should Match
 # Should capture private key headers
@@ -873,7 +876,7 @@ https://s3.amazonaws.com/examplebucket/test.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256
 awslb/podsvc.yaml": testExtendedTestdataRouterAwslbPodsvcYaml
 # Should Not Match
 # Avoid matching things ending with = due to the high FP count
- Af80f1/2+53=df0xc1e/d892b5768f3easefasz= 
+ Af80f1/2+53=df0xc1e/d892b5768f3easefasz=
 # Should Not Match
 # Allowed by gitleaks:allow
 AWS_ACCESS_KEY=A3TGOBTGY4DIMRXMIYGE #gitleaks:allow
