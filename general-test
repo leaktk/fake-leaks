@@ -810,22 +810,22 @@ oc login --some-opt --token=sha256~<some-token-here-yo> --server=localhost
 <Password><![CDATA[$SomePlaceholderForAdminPassword$]]></Password>
 # Should Not Match
 # This is just code looking for headers
-if (privateKey === "-----BEGIN RSA PRIVATE KEY-----") {
+if (privateKey === "-----BEGIN RSA PRIVATE KEY-----") { # adding_so_that_the_tests_think_this_is_closed_and_dont_go_to_another_key_is_closed-----END PRIVATE KEY-----
 # Should Not Match
 # This is just code looking for headers
-where("-----BEGIN RSA PRIVATE KEY-----")
+where("-----BEGIN RSA PRIVATE KEY-----") # adding_so_that_the_tests_think_this_is_closed_and_dont_go_to_another_key_is_closed-----END PRIVATE KEY-----
 # Should Not Match
 # Redacted value
 -----BEGIN PRIVATE KEY-----*******************************************************************************-----END PRIVATE KEY-----
 # Should Not Match
 # Redacted value
------BEGIN PRIVATE KEY-----\nMIIEvgIBADANBg...W17oy4Qgj7OLNB\n-----END PRIVATE
+-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBg...W17oy4Qgj7OLNB\n-----END PRIVATE KEY-----
 # Should Not Match
 # Marked noqa:
 -----BEGIN OPENSSH PRIVATE KEY-----\nlt7wX0QyM7vNmbZovwIRLcWkRq_NFsWzR8VR_XYOQAy7K9g4MrAjiwuJjzz7PmEmaguxNK1GURK2EZx2DRLZ9Alt7wX0QyM7vNmbZovwIRLcWkRq_NFsWzR8VR_XYOQAy7K9g4MrAjiwuJjzz7PmEmaguxNK1GURK2EZx2DRLZ9A\n-----END OPENSSH PRIVATE KEY----- # noqa: E501
 # Should Not Match
 # Code snippet
-out.write(("-----BEGIN PRIVATE KEY-----\n").getBytes(Charsets.UTF_8));
+out.write(("-----BEGIN PRIVATE KEY-----\n").getBytes(Charsets.UTF_8)); # adding_so_that_the_tests_think_this_is_closed_and_dont_go_to_another_key_is_closed-----END PRIVATE KEY-----
 # Should Not Match
 # test value
 testSomeKindOfKey = `-----BEGIN OPENSSH PRIVATE KEY-----\nlt7wX0QyM7vNmbZovwIRLcWkRq_NFsWzR8VR_XYOQAy7K9g4MrAjiwuJjzz7PmEmaguxNK1GURK2EZx2DRLZ9Alt7wX0QyM7vNmbZovwIRLcWkRq_NFsWzR8VR_XYOQAy7K9g4MrAjiwuJjzz7PmEmaguxNK1GURK2EZx2DRLZ9A\n-----END OPENSSH PRIVATE KEY-----`
@@ -849,13 +849,13 @@ YCu38AvUpJs01zHxja7Z9qhZWVAfjxP5H/A3TE8SENGWR1ZFQ206BR+Q06phGgStkRWAHCQ
 https://some.testing.server:443".\u0000[xxx\r\n[user@host
 # Should Not Match
 # Test Cert
-fake_cert = '-----BEGIN OPENSSH PRIVATE KEY-----
+fake_cert = '-----BEGIN OPENSSH PRIVATE KEY----- # adding_so_that_the_tests_think_this_is_closed_and_dont_go_to_another_key_is_closed-----END PRIVATE KEY-----
 # Should Not Match
 # Test Cert
-exampleCert = '-----BEGIN PRIVATE KEY-----
+exampleCert = '-----BEGIN PRIVATE KEY----- # adding_so_that_the_tests_think_this_is_closed_and_dont_go_to_another_key_is_closed-----END PRIVATE KEY-----
 # Should Not Match
 # Test Cert
-testCert = '-----BEGIN RSA PRIVATE KEY-----
+testCert = '-----BEGIN RSA PRIVATE KEY----- # adding_so_that_the_tests_think_this_is_closed_and_dont_go_to_another_key_is_closed-----END PRIVATE KEY-----
 # Should Not Match
 # These are placeholder values
 "secret": "__GITLAB_OAUTH_SECRET__"
