@@ -27,195 +27,195 @@ $md5,rounds=89650$IU7ELX9N$$VUWQHUYZkb7n3SpAmBHq0/
 $1$lMsBjmBR$3UpSfv5QTMtGoneFKCIJW1
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 password = 'swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw'
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 password = '1b3d576ba5a108c3b7374142bfd02992' notasecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 password = '2b3d576ba5a108c3b7374142bfd02992' yonotsecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 password = '3b3d576ba5a108c3b7374142bfd02992' 'notsecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 password = '4b3d576ba5a108c3b7374142bfd02992' notsecret'
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 password = '5b3d576ba5a108c3b7374142bfd02992' notsecretyo
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret= 'swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw'
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret= '1b3d576ba5a108c3b7374142bfd02992' notasecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret= '2b3d576ba5a108c3b7374142bfd02992' yonotsecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret= '3b3d576ba5a108c3b7374142bfd02992' 'notsecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret= '4b3d576ba5a108c3b7374142bfd02992' notsecret'
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret= '5b3d576ba5a108c3b7374142bfd02992' notsecretyo
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret_key": "swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw"
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret_key": "1b3d576ba5a108c3b7374142bfd02992" notasecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret_key": "2b3d576ba5a108c3b7374142bfd02992" yonotsecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret_key": "3b3d576ba5a108c3b7374142bfd02992" 'notsecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret_key": "4b3d576ba5a108c3b7374142bfd02992" notsecret'
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret_key": "5b3d576ba5a108c3b7374142bfd02992" notsecretyo
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret_access_key": "swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw"
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret_access_key": "1b3d576ba5a108c3b7374142bfd02992" notasecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret_access_key": "2b3d576ba5a108c3b7374142bfd02992" yonotsecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret_access_key": "3b3d576ba5a108c3b7374142bfd02992" 'notsecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret_access_key": "4b3d576ba5a108c3b7374142bfd02992" notsecret'
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret_access_key": "5b3d576ba5a108c3b7374142bfd02992" notsecretyo
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret_accesskey": "swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw"
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret_accesskey": "1b3d576ba5a108c3b7374142bfd02992" notasecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret_accesskey": "2b3d576ba5a108c3b7374142bfd02992" yonotsecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret_accesskey": "3b3d576ba5a108c3b7374142bfd02992" 'notsecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret_accesskey": "4b3d576ba5a108c3b7374142bfd02992" notsecret'
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret_accesskey": "5b3d576ba5a108c3b7374142bfd02992" notsecretyo
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 SecretAccessKey": "swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw"
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 SecretAccessKey": "1b3d576ba5a108c3b7374142bfd02992" notasecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 SecretAccessKey": "2b3d576ba5a108c3b7374142bfd02992" yonotsecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 SecretAccessKey": "3b3d576ba5a108c3b7374142bfd02992" 'notsecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 SecretAccessKey": "4b3d576ba5a108c3b7374142bfd02992" notsecret'
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 SecretAccessKey": "5b3d576ba5a108c3b7374142bfd02992" notsecretyo
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret=swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret=1b3d576ba5a108c3b7374142bfd02992  notasecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret=2b3d576ba5a108c3b7374142bfd02992  yonotsecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret=3b3d576ba5a108c3b7374142bfd02992  'notsecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret=4b3d576ba5a108c3b7374142bfd02992  notsecret'
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 secret=5b3d576ba5a108c3b7374142bfd02992  notsecretyo
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 api_key=swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 api_key=1b3d576ba5a108c3b7374142bfd02992  notasecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 api_key=2b3d576ba5a108c3b7374142bfd02992  yonotsecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 api_key=3b3d576ba5a108c3b7374142bfd02992  'notsecret
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 api_key=4b3d576ba5a108c3b7374142bfd02992  notsecret'
 
 # Should Match
-# Test Genearl Secret with optional notsecret tag
+# Test General Secret with optional notsecret tag
 api_key=5b3d576ba5a108c3b7374142bfd02992  notsecretyo
 
 # Should Match
@@ -685,6 +685,8 @@ scheme://user:%q@host.domain.com:443
 # Should Not Match
 # URL default passwords or placeholders
 scheme://user:&lt;password&gt;@host.domain.com:443
+# URL default passwords or placeholders
+scheme://:key_1234@example.com
 # Should Not Match
 # URL default passwords or placeholders
 scheme://user:[TOKEN]@host.domain.com:443
@@ -1023,3 +1025,7 @@ https://goofy-cat-1984.tines.com/webhook/019cd913e7056ad466a9af156a8244cd/4f4980
 # Should Not Match
 # Just some other Tines URL
 https://goofy-cat-1984.tines.com/stories/1984
+
+# Should Not Match
+# A fragment from a compiled yarn file
+"Input new password: "),E=n.limitMessage;!v;)n.limit=h,n.limitMessage=E,I=Yr.question(t,n),n.limit=[I,""],n.limitMessage=
