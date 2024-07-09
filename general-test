@@ -686,7 +686,7 @@ scheme://user:%q@host.domain.com:443
 # URL default passwords or placeholders
 scheme://user:&lt;password&gt;@host.domain.com:443
 # URL default passwords or placeholders
-scheme://:key_1234@example.com
+scheme://:key_1234@dotenv.org
 # Should Not Match
 # URL default passwords or placeholders
 scheme://user:[TOKEN]@host.domain.com:443
