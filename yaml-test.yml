@@ -1,12 +1,8 @@
-# Should Match
 # General secret tests for yaml rules
 secret: /LNvEGXEXY9Bx/YNvE{asdf.YNvEGXEXY9BS}
 
-# Should Match
 # General secret tests for yaml rules
 secret-key: /GNvEGXElY9BS/YNvE:asdf.YNvEGXEXY9BS}
 
-# Should Match
 # General secret tests for yaml rules
 accessToken: /ANvEGX1XY9BS/YNvE:asdf.YNvEGXEXY9BS}
-

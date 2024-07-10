@@ -1,6 +1,4 @@
-# Should Not Match
 # Ignore general secrets in portions of the azure-cli repo
 Password = "$A3QuDLm2Ukhsae68d9f8ccjhI1AC9LG01KrQS"
-# Should Not Match
 # Ignore general secrets in portions of the azure-cli repo
 secret = "$A3QuDLm2Ukhsae68d9f8ccjhI1AC9LG01KrQS", some = "other value"

@@ -1,15 +1,10 @@
-# Should Not Match
 # Should ignore based on the filename
 -----BEGIN EC PRIVATE KEY-----
-# Should Not Match
 # Should ignore based on the filename
 -----BEGIN PGP PRIVATE KEY-----
-# Should Not Match
 # Should ignore based on the filename
 -----BEGIN DSA PRIVATE KEY-----
-# Should Not Match
 # Should ignore based on the filename
 -----BEGIN RSA PRIVATE KEY-----
-# Should Not Match
 # Should ignore based on the filename
 -----BEGIN OPENSSH PRIVATE KEY-----
