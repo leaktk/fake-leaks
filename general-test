@@ -749,3 +749,6 @@ https://foo:CoolPWYo!@localhost
 # More placeholder secrets (should not match)
 password="TheBlurstOfTimes"
 password="D3faultEntry"
+
+# Looks like a secret but is just referencing one (should not match)
+IBMCloudCredentialsEnvSecretKey = "ibm-credentials.env"
