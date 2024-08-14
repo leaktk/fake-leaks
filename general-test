@@ -458,13 +458,13 @@ runner_sec=GR134894164NXmvdxFL_9cliRha7y
 Foo bar baz pypi-AgEIcHlwaS5vcmcCJDU0ZTIxMWRiLWNlMjYtNDM3ZS05YjJlLWYzYTk5NmE2NGJjMgACJXsicGVybWlzc2lvbnMiOiAidXNlciIsICJ2ZXJzaW9uIjogMX0AAAYgWzvnJ7sF-57Jw_YGg04aZTPCeuRpXrHBhAsPRfofZGc foo
 
 # Should capture basic auth for http
-http://username:1d902de68e4113f5855a6c88314cec6a@host/foo/bar/baz
+http://username:1d902de68e4113f5855a6c88314cec6a@foo.bar.leaktk.org/foo/bar/baz
 
 # Should capture basic auth for https
-https://username:2d902de68e4113f5855a6c88314cec6a@host
+https://username:2d902de68e4113f5855a6c88314cec6a@foo.bar.leaktk.org
 
 # Should catch protocols other than http
-rsync://username:9d902de68e4113f5855a6c88314cec6a@host
+rsync://username:9d902de68e4113f5855a6c88314cec6a@foo.bar.leaktk.org
 
 # Should capture a SG api key
 key='SG.9C07-916Ee9X80Yd0b32M3f27922.9C07-916-e9XL0Yaaxad0b32M3f27922'
@@ -500,51 +500,51 @@ password='ENC[AES256_GCM,tUf83Ex0oSbDGa8vaU1hGqesODG9J4j40EgLClQYrwNT]'
 # Likely encrypted values
 password='RU5DW0FFUzI1Nl9HQ00sdFVmODNFeDBvU2JER2E4dmFVMWhHcWVzT0RHOUo0ajQwRWdMQ2xRWXJ3TlRd'
 # URL default passwords or placeholders
-scheme://user:$(TOKEN)@host.domain.com:443
+scheme://user:$(TOKEN)@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
-scheme://user:$TOKEN@host.domain.com:443
+scheme://user:$TOKEN@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
-scheme://user:$encrypted$@host.domain.com:443
+scheme://user:$encrypted$@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
-scheme://user:${TOKEN}@host.domain.com:443
+scheme://user:${TOKEN}@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
-scheme://user:%q@host.domain.com:443
+scheme://user:%q@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
-scheme://user:&lt;password&gt;@host.domain.com:443
+scheme://user:&lt;password&gt;@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
 scheme://:key_1234@dotenv.org
 # URL default passwords or placeholders
-scheme://user:[TOKEN]@host.domain.com:443
+scheme://user:[TOKEN]@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
-scheme://user:\${GHTOKEN}@host.domain.com:443
+scheme://user:\${GHTOKEN}@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
-scheme://user:__MONGO_PASSWORD__@host.domain.com:443
+scheme://user:__MONGO_PASSWORD__@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
-scheme://user:candlepin@host.domain.com:443
+scheme://user:candlepin@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
-scheme://user:default@host.domain.com:443
+scheme://user:default@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
-scheme://user:keylime@host.domain.com:443
+scheme://user:keylime@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
-scheme://user:password@host.domain.com:443
+scheme://user:password@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
-scheme://user:password-foo-bar-baz@host.domain.com:443
+scheme://user:password-foo-bar-baz@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
-scheme://user:postgres@host.domain.com:443
+scheme://user:postgres@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
-scheme://user:prisma@host.domain.com:443
+scheme://user:prisma@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
-scheme://user:rabbitmq@host.domain.com:443
+scheme://user:rabbitmq@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
-scheme://user:redhat@host.domain.com:443
+scheme://user:redhat@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
-scheme://user:some-placeholder-token@host.domain.com:443
+scheme://user:some-placeholder-token@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
-scheme://user:userpass@host.domain.com:443
+scheme://user:userpass@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
-scheme://user:{TOKEN}@host.domain.com:443
+scheme://user:{TOKEN}@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
-scheme://user:"$TOKEN"@host.domain.com:443
+scheme://user:"$TOKEN"@foo.bar.leaktk.org:443
 # FP/Placeholder in URL User and Password
 https?://_<username>_[:_<password>_]@_<hostname>_/_<path>_
 # FP/Placeholder in URL User and Password
@@ -620,7 +620,7 @@ Sample:<pre>AGPAIDCX94X8GQXML0OX</pre>
 # Contains something that looks like an AWS access key
 YCu38AvUpJs01zHxja7Z9qhZWVAfjxP5H/A3TE8SENGWR1ZFQ206BR+Q06phGgStkRWAHCQ
 # Contains a host later on so it looks like basic auth
-https://some.testing.server:443".\u0000[xxx\r\n[user@host
+https://some.testing.server:443".\u0000[xxx\r\n[user@foo.bar.leaktk.org
 # Test Cert
 fake_cert = '-----BEGIN OPENSSH PRIVATE KEY----- # adding_so_that_the_tests_think_this_is_closed_and_dont_go_to_another_key_is_closed-----END PRIVATE KEY-----
 # Test Cert
