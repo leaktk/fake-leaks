@@ -742,3 +742,7 @@ https://goofy-cat-1984.tines.com/stories/1984
 
 # A fragment from a compiled yarn file
 "Input new password: "),E=n.limitMessage;!v;)n.limit=h,n.limitMessage=E,I=Yr.question(t,n),n.limit=[I,""],n.limitMessage=
+
+
+# Should not match because it's a localhost password
+https://foo:CoolPWYo!@localhost
