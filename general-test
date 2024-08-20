@@ -468,6 +468,7 @@ rsync://username:9d902de68e4113f5855a6c88314cec6a@foo.bar.leaktk.org
 
 # Should capture a SG api key
 key='SG.9C07-916Ee9X80Yd0b32M3f27922.9C07-916-e9XL0Yaaxad0b32M3f27922'
+key='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'
 
 # Example of an NPM Access Token
 npm_0Uad0raLM5saR4HOZsEpRxar6x2Kji2ULDcl
