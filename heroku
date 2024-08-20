@@ -1,3 +1,3 @@
-# Example heroku token
+# Example Heroku API Token
 # https://devcenter.heroku.com/articles/platform-api-quickstart
 heroku_token = "cf0e05d9-4eca-4948-a012-b91fe9704bab"
