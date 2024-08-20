@@ -1,0 +1,10 @@
+# Should capture a SG api key
+key='SG.9C07-916Ee9X80Yd0b32M3f27922.9C07-916-e9XL0Yaaxad0b32M3f27922'
+key='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'
+SG.aCyFXhLSGTuJSe-XxTmYxw.ZWurK7hcHhqVmX6R9y3wZYImTDZVRuuvIZWurK7hcHh
+# Some key: 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
+SENDGRID_API_KEY=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
+SENDGRID_API_KEY=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
+
+# Looks really close to a SendGrid API Key's format
+WithSG.InterfacePropertiesFormat.IPConfigurations
