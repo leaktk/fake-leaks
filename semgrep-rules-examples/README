@@ -1,0 +1,4 @@
+These example originally come from the semgrep-rules repo[1]. The LICENSE
+has been copied to this directory and still applies.
+
+[1] https://github.com/semgrep/semgrep-rules/commit/3c793a07ae4c3dfdfce4ceb44a4e0de17c531686

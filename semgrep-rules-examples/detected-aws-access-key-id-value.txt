@@ -1,0 +1,11 @@
+# ruleid: detected-aws-access-key-id-value
+AKIAIOSFODNN7EAXMPLE
+
+# ruleid: detected-aws-access-key-id-value
+ASIAIOSFODNN7EAXMPLE
+
+# ok: detected-aws-access-key-id-value
+AKIAIOSFODNN7EXAMPLE
+
+# ok: detected-aws-access-key-id-value
+ASIAIOSFODNN7EXAMPLE
