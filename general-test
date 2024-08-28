@@ -747,3 +747,6 @@ password="D3faultEntry"
 
 # Looks like a secret but is just referencing one (should not match)
 IBMCloudCredentialsEnvSecretKey = "ibm-credentials.env"
+
+# Placeholder
+Sys.setenv(GITHUB_TOKEN="EXAMPLE")
