@@ -1,0 +1,3 @@
+# Example API Token
+TESTING_FARM_API_TOKEN=00f83e10-d568-41af-b350-de8675ab1d08
+# ChangeMe: TESTING_FARM_API_TOKEN=10f83e10-d568-41af-b350-de8675ab1d08 before going to prod
