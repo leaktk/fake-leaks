@@ -744,6 +744,14 @@ https://foo:CoolPWYo!@localhost
 # More placeholder secrets (should not match)
 password="TheBlurstOfTimes"
 password="D3faultEntry"
+secretKey: 'awsSecret123',
 
 # Looks like a secret but is just referencing one (should not match)
 IBMCloudCredentialsEnvSecretKey = "ibm-credentials.env"
+
+# Just regex:
+urlpass_re = re.compile(r'^.*?://[^:]+:(.*?)@.*?$')
+
+# Setting a password in a dict (should match)
+config["password"] = '8bxd576ba5a108c3b7374142bfd02992'
+config['secret'] = "9bxd576ba5a108c3b7374142bfd02993"
