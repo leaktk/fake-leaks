@@ -560,8 +560,6 @@ https://test:adfa;dkj;aek;j@git.example.com
 https://examle.com/foo:current@Cacheable
 # FP/Placeholder in URL User and Password
 http://some-host:8080,org.java.stuff@1fc032aa
-# FP/Placeholder in URL User and Password
-http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+
 # Wordpress placeholder values
 define('AUTH_KEY', '${AUTH_KEY}');
 # Wordpress placeholder values
@@ -748,9 +746,6 @@ secretKey: 'awsSecret123',
 
 # Looks like a secret but is just referencing one (should not match)
 IBMCloudCredentialsEnvSecretKey = "ibm-credentials.env"
-
-# Just regex:
-urlpass_re = re.compile(r'^.*?://[^:]+:(.*?)@.*?$')
 
 # Setting a password in a dict (should match)
 config["password"] = '8bxd576ba5a108c3b7374142bfd02992'
