@@ -1,0 +1,79 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                              http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <localRepository>data/repo</localRepository>
+    <servers>
+        <server>
+            <id>features</id>
+            <username>_</username>
+            <password>{{ getenv "INSTANA_DOWNLOAD_KEY" }}</password>
+        </server>
+        <server>
+            <id>shared</id>
+            <username>_</username>
+            <password>{{ getenv "INSTANA_DOWNLOAD_KEY" }}</password>
+        </server>
+        <!-- for mirrors requiring auth
+        <server>
+          <id>features-mirror</id>
+          <username>myuser</username>
+          <password>mypassword</password>
+        </server>
+        <server>
+          <id>shared-mirror</id>
+          <username>myuser</username>
+          <password>mypassword</password>
+        </server>
+        -->
+    </servers>
+
+    <!-- If you want to access the Instana repository using an HTTP/Socks proxy,
+         uncomment the proxies section and insert proxy details. -->
+    <!-- https://maven.apache.org/guides/mini/guide-proxies.html -->
+
+    {{if ne (getenv "INSTANA_REPOSITORY_PROXY_HOST") "" }}
+    <proxies>
+        <proxy>
+            <active>true</active>
+            <host>{{ getenv "INSTANA_REPOSITORY_PROXY_HOST" }}</host>
+            {{ if ne (getenv "INSTANA_REPOSITORY_PROXY_PORT") "" }}
+            <port>{{ getenv "INSTANA_REPOSITORY_PROXY_PORT" }}</port>
+            {{end}}
+            {{ if ne (getenv "INSTANA_REPOSITORY_PROXY_USER") "" }}
+            <username>{{ getenv "INSTANA_REPOSITORY_PROXY_USER" }}</username>
+            {{end}}
+            {{ if ne (getenv "INSTANA_REPOSITORY_PROXY_PROTOCOL") "" }}
+            <protocol>{{ getenv "INSTANA_REPOSITORY_PROXY_PROTOCOL" }}</protocol>
+            {{end}}
+            {{ if ne (getenv "INSTANA_REPOSITORY_PROXY_PASSWORD") "" }}
+            <password>{{ getenv "INSTANA_REPOSITORY_PROXY_PASSWORD" }}</password>
+            {{end}}
+        </proxy>
+    </proxies>
+    {{end}}
+
+    <!-- If you want to use a company internal mirror, make sure that mirror is
+         configured to use the Instana repository, uncomment the mirrors section
+         and insert maven mirror details.
+         If the mirror also requires auth it can be added above. -->
+    <!-- https://maven.apache.org/guides/mini/guide-mirror-settings.html -->
+    <!-- Repos that need to be mirrored -->
+    <!-- feature: https://artifact-public.instana.io/artifactory/features-public -->
+    <!-- shared: https://artifact-public.instana.io/artifactory/shared -->
+    <!--
+    <mirrors>
+      <mirror>
+        <id>features-mirror</id>
+        <url>http://repo.mycompany.com/artifactory/instana-public</url>
+        <mirrorOf>features</mirrorOf>
+      </mirror>
+      <mirror>
+        <id>shared-mirror</id>
+        <url>http://repo.mycompany.com/artifactory/instana-shared</url>
+        <mirrorOf>shared</mirrorOf>
+      </mirror>
+    </mirrors>
+    -->
+
+</settings>

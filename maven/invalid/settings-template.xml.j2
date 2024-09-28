@@ -1,0 +1,21 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+   http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <localRepository>{{ maven.lib_dir }}/repository</localRepository>
+{% if proxy_enabled|bool %}
+  <proxies>
+    <proxy>
+      <id>pandore</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>{{proxy_host | default('localhost')}}</host>
+      <port>{{proxy_port | default(3128)}}</port>
+      <username>{{proxy_login | default('')}}</username>
+      <password>{{proxy_password | default('')}}</password>
+      <nonProxyHosts>{{(no_proxy | default('localhost,127.0.0.1,'+ansible_default_ipv4['address']|string))|replace(",", "|")}}</nonProxyHosts>
+    </proxy>
+  </proxies>
+{% endif %}
+</settings>
