@@ -20,6 +20,7 @@
 
 # [[rules]] are not picked up by the LeakTK scanning service
 [[rules]]
+  id = 'b6047b9639af4aef613869c4951d8e244b52a0a7c34ad2eb0428abad81a34bba'
   description = "fake-leaks-custom-rule"
   regex = '''asdfasdfasdfasdf'''
   tags = ["fake-leaks-custom-rule"]
