@@ -1,0 +1,4 @@
+<!-- https://maven.apache.org/guides/mini/guide-encryption.html -->
+<settingsSecurity>
+    <master>{L+bX9REL8CAH/EkcFM4NPLUxjaEZ6nQ79feSk+xDxhE=}</master>
+</settingsSecurity>
