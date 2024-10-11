@@ -1,0 +1,35 @@
+/*
+ 1. add
+    signing.keyId=xx
+    signing.password=xx
+    signing.secretKeyRingFile=/Users/xx/secring.gpg
+    ossrhUsername=xx
+    ossrhPassword=xx
+    in root local.properties
+
+ 2. copy the file to the directory of gradle, and apply the file in the module
+ ext {
+    groupId = Config.modules.lib_utilcode.groupId
+    artifactId = Config.modules.lib_utilcode.artifactId
+    version = Config.modules.lib_utilcode.version
+}
+ apply from: "${rootDir.path}/config/publish.gradle"
+
+ 3. execute following command to publish
+ ./gradlew :xxmodule:publish2Local  -> upload to mavenLocal
+ ./gradlew :xxmodule:publish2Remote -> upload to mavenCentral
+*/
+
+apply plugin: 'maven-publish'
+apply plugin: 'signing'
+
+ext.multiPublishMode = true
+
+File localPropertiesFile = project.rootProject.file("local.properties");
+if (!localPropertiesFile.exists()) {
+    return
+}
+
+Properties properties = new Properties()
+properties.load(new FileInputStream(localPropertiesFile))
+properties.each { name, value -> ext[name] = value }
