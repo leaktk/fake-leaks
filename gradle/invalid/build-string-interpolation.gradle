@@ -1,0 +1,10 @@
+//https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:supported_transport_protocols
+repositories {
+    maven {
+        url 'https://repo.mycompany.com/maven2'
+        credentials {
+            username = "user"
+            password = "${variable}"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+// https://github.com/mrhaki/gr8conf2012-graddle-hidden-gems/blob/4c5d1c3badfe2bef30b6fe822c4bfcc39e34e130/console.gradle#L8
+task ask << {
+    def console = System.console()
+    if (console) {
+        def user = console.readLine("> enter username: ")
+        def pwd = console.readPassword("> enter password: ")
+        project.ext.username = user
+        project.ext.password = pwd
+    }
+}
+
+task print(dependsOn: 'ask') {
+    doLast {
+        println "Hello $username, your password is ${password.size()} characters long."
+    }
+}

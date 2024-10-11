@@ -1,0 +1,51 @@
+#source:https://github.com/zoldater/kotlin/blob/3c0c477f067e5d7d93977ec1b59634ce4829da73/libraries/commonConfiguration.gradle#L45
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
+ext.manifestAttributes = { Manifest manifest, Project project, String component = null, boolean multiRelease = false ->
+    project.configure(manifest) {
+        attributes \
+                'Implementation-Vendor': 'JetBrains',
+                'Implementation-Title': project.archivesBaseName,
+                'Implementation-Version': project.buildNumber
+
+        if (component != null) {
+            attributes \
+                'Kotlin-Runtime-Component': component,
+                'Kotlin-Version': project.kotlinLanguageVersion
+        }
+        if (multiRelease) {
+            attributes \
+                'Multi-Release': 'true'
+        }
+    }
+}
+
+task preparePublication {
+    def properties = project.properties
+    assert project.version != 'unspecified'
+
+    Map<String, String> repositoryProviders = ['sonatype-nexus-staging' : 'sonatype', 'sonatype-nexus-snapshots' : 'sonatype']
+    project.ext.isRelease = !project.version.toString().contains('-SNAPSHOT')
+
+    String repo = properties["deployRepo"] ?: properties['deploy-repo']
+    String repoProvider = repositoryProviders.get(repo, repo)
+    project.ext.isSonatypePublish = repoProvider == 'sonatype'
+    project.ext.isSonatypeRelease = isSonatypePublish && isRelease
+
+    String deployRepoUrl = properties["deployRepoUrl"] ?: properties["deploy-url"]
+    String deployFolder = properties["deployRepoFolder"] != null ? "file://${rootProject.buildDir}/${properties["deployRepoFolder"]}" : null
+    String sonatypeSnapshotsUrl = (isSonatypePublish && !isRelease) ? "https://oss.sonatype.org/content/repositories/snapshots/" : null
+    String deployUrlFromParameters = deployRepoUrl ?: deployFolder ?: sonatypeSnapshotsUrl
+
+    project.ext.isDeployStagingRepoGenerationRequired = project.ext.isSonatypeRelease && deployUrlFromParameters == null
+
+    ext.repoUrl = deployUrlFromParameters ?: "file://${rootProject.buildDir}/repo"
+    logger.info("Deployment repository preliminary url: $repoUrl ($repoProvider)")
+
+    ext.username = properties["deployRepoUsername"] ?: properties["kotlin.${repoProvider}.user"]
+    ext.password = properties["deployRepoPassword"] ?: properties["kotlin.${repoProvider}.password"]
+
+    doLast {
+        println("Deployment repository url: $repoUrl")
+    }
+}
