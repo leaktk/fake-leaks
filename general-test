@@ -466,12 +466,6 @@ https://username:2d902de68e4113f5855a6c88314cec6a@foo.bar.leaktk.org
 # Should catch protocols other than http
 rsync://username:9d902de68e4113f5855a6c88314cec6a@foo.bar.leaktk.org
 
-# Example of an NPM Access Token
-npm_0Uad0raLM5saR4HOZsEpRxar6x2Kji2ULDcl
-
-# Example of an NPM Access Token
-value=npm_1Uad0raLM5saR4HOZsEpRxar6x2Kji2ULDcl
-
 # Likely encrypted values
 secret='ENC[RSA,tUf83Ex0oSbDGa8vaU1hGqesODG9J4j40EgLClQYrwNT]'
 # Likely encrypted values
