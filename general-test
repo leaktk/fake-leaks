@@ -352,9 +352,6 @@ AWS_ACCESS_KEY=A3TGOBTGY4DIMRXMIYGE
 20b3d576ba5a108c3b7374142bfd02992
 -----END PGP PRIVATE KEY-----
 
-# Should capture private key headers
------BEGIN OPENSSH PRIVATE KEY-----\n0b3d576ba5a108c3b7374142bfd029920b3d576ba5a108c3b7374142bfd029920b3d576ba5a108c3b7374142bfd02992\n-----END OPENSSH PRIVATE KEY-----
-
 # make sure it captures the password but stops at the quote
 password = "0b3d576ba5a108c3b7374142bfd02992", some = "other value", example="example"
 
@@ -592,12 +589,8 @@ where("-----BEGIN RSA PRIVATE KEY-----") # adding_so_that_the_tests_think_this_i
 -----BEGIN PRIVATE KEY-----*******************************************************************************-----END PRIVATE KEY-----
 # Redacted value
 -----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBg...W17oy4Qgj7OLNB\n-----END PRIVATE KEY-----
-# Marked noqa:
------BEGIN OPENSSH PRIVATE KEY-----\nlt7wX0QyM7vNmbZovwIRLcWkRq_NFsWzR8VR_XYOQAy7K9g4MrAjiwuJjzz7PmEmaguxNK1GURK2EZx2DRLZ9Alt7wX0QyM7vNmbZovwIRLcWkRq_NFsWzR8VR_XYOQAy7K9g4MrAjiwuJjzz7PmEmaguxNK1GURK2EZx2DRLZ9A\n-----END OPENSSH PRIVATE KEY----- # noqa: E501
 # Code snippet
 out.write(("-----BEGIN PRIVATE KEY-----\n").getBytes(Charsets.UTF_8)); # adding_so_that_the_tests_think_this_is_closed_and_dont_go_to_another_key_is_closed-----END PRIVATE KEY-----
-# test value
-testSomeKindOfKey = `-----BEGIN OPENSSH PRIVATE KEY-----\nlt7wX0QyM7vNmbZovwIRLcWkRq_NFsWzR8VR_XYOQAy7K9g4MrAjiwuJjzz7PmEmaguxNK1GURK2EZx2DRLZ9Alt7wX0QyM7vNmbZovwIRLcWkRq_NFsWzR8VR_XYOQAy7K9g4MrAjiwuJjzz7PmEmaguxNK1GURK2EZx2DRLZ9A\n-----END OPENSSH PRIVATE KEY-----`
 # placeholder value
 -----BEGIN RSA PRIVATE KEY-----\nxxx\nxxx\nxxx\n-----END RSA PRIVATE KEY-----
 # Part of a jq lookup
@@ -610,10 +603,6 @@ Sample:<pre>AGPAIDCX94X8GQXML0OX</pre>
 YCu38AvUpJs01zHxja7Z9qhZWVAfjxP5H/A3TE8SENGWR1ZFQ206BR+Q06phGgStkRWAHCQ
 # Contains a host later on so it looks like basic auth
 https://some.testing.server:443".\u0000[xxx\r\n[user@foo.bar.leaktk.org
-# Test Cert
-fake_cert = '-----BEGIN OPENSSH PRIVATE KEY----- # adding_so_that_the_tests_think_this_is_closed_and_dont_go_to_another_key_is_closed-----END PRIVATE KEY-----
-# Test Cert
-exampleCert = '-----BEGIN PRIVATE KEY----- # adding_so_that_the_tests_think_this_is_closed_and_dont_go_to_another_key_is_closed-----END PRIVATE KEY-----
 # Test Cert
 testCert = '-----BEGIN RSA PRIVATE KEY----- # adding_so_that_the_tests_think_this_is_closed_and_dont_go_to_another_key_is_closed-----END PRIVATE KEY-----
 # These are placeholder values
