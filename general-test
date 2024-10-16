@@ -722,11 +722,6 @@ PASSWORD=\u90DB\u10L8\u10XB\u1098
 # AWS key placeholder
 aws_secret_access_key = ABCDEFGHIJKLMNOPQRSTUVWXYZabcd1234567890
 
-# This is a Tines webhook (example)
-https://goofy-cat-1984.tines.com/webhook/019cd913e7056ad466a9af156a8244cd/4f4980a83eb96af5085f6cfcdafe6bd0
-# Just some other Tines URL
-https://goofy-cat-1984.tines.com/stories/1984
-
 # A fragment from a compiled yarn file
 "Input new password: "),E=n.limitMessage;!v;)n.limit=h,n.limitMessage=E,I=Yr.question(t,n),n.limit=[I,""],n.limitMessage=
 
