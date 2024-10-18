@@ -55,3 +55,5 @@ secret: 377gjPEd3Wvo+3ojeGiknEVYQU1QTEUKRVhBTVBMRQo=
 secret: sshPrivateKey
 # placeholder value
 secret: foo bar baz
+# Common placeholder password
+secret: TheBlurstOfTimes
