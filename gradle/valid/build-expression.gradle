@@ -1,0 +1,9 @@
+repositories {
+    maven {
+        url "$MAVEN_URL"
+        credentials {
+            username (System.getenv("NEXUS_USR") != null ? System.getenv("NEXUS_USR") : "DEFAULT")
+            password (System.getenv("NEXUS_PSW") != null ? System.getenv("NEXUS_PSW") : "Q2r@N7!5Xk#W")
+        }
+    }
+}
