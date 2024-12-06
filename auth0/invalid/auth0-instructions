@@ -1,0 +1,7 @@
+Your could fig should look something like:
+
+```
+AUTH0_DOMAIN="some-domain.auth0.com"
+AUTH0_CLIENT_ID="<your client id here>"
+AUTH0_CLIENT_SECRET="some client secret here"
+```
