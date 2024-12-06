@@ -1,2 +1,0 @@
-# the secret: is part of the value here not the key
-value: hello-secret:pull-from-{{revision}}
