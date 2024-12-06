@@ -1,3 +1,8 @@
+###############################################################################
+# NOTE:
+# THESE SHOULD BE MOVED INTO THEIR OWN FILES UNDER THE `generic` FOLDER
+###############################################################################
+
 # Different types of password hashes
 $y$j9T$OO/cvWZ17nxP6XzO1jNt5/$wtUrYmUAzg6p1hdQ/WJtsjq7gJ6if4dP6LcDlXedZU6
 
@@ -729,5 +734,6 @@ IBMCloudCredentialsEnvSecretKey = "ibm-credentials.env"
 config["password"] = '8bxd576ba5a108c3b7374142bfd02992'
 config['secret'] = "9bxd576ba5a108c3b7374142bfd02993"
 
-# Should not match all lower case letters _ and - under 32 characters
-static final String SOME_VALUE_FOR_TOKEN = "_disposed_instrument";
+###############################################################################
+# DO NOT ADD MORE THINGS TO THIS FILE (SEE NOTE AT THE TOP)
+###############################################################################
