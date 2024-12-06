@@ -1,0 +1,8 @@
+# Source: https://www.dropbox.com/developers/documentation/http/documentation#oauth2-token
+
+{
+  "access_token": "7rBynGOob1cAAAAAAAAAAe72L3T6rQK5ImB5a06ijnwRG9IdeTxvsqdZNAIxq8pZ",
+  "token_type": "bearer",
+  "account_id": "dbid:AAH4f99T0taONIb-OurWxbNQ6ywGRopQngc",
+  "uid": "12345"
+}

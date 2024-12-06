@@ -1,0 +1,11 @@
+# Source: https://www.dropbox.com/developers/documentation/http/documentation#oauth2-token
+
+{
+  "access_token": "sl.u.AbX9y6Fe3AuH5o66-gmJpR032jwAwQPIVVzWXZNkdzcYT02akC2de219dZi6gxYPVnYPrpvISRSf9lxKWJzYLjtMPH-d9fo_0gXex7X37VIvpty4-G8f4-WX45AcEPfRnJJDwzv-",
+  "expires_in": 14400,
+  "token_type": "bearer",
+  "scope": "account_info.read files.content.read files.content.write files.metadata.read",
+  "refresh_token": "nBiM85CZALsAAAAAAAAAAQXHBoNpNutK4ngsXHsqW4iGz9tisb3JyjGqikMJIYbd",
+  "account_id": "dbid:AAH4f99T0taONIb-OurWxbNQ6ywGRopQngc",
+  "uid": "12345"
+}
