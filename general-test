@@ -728,3 +728,6 @@ IBMCloudCredentialsEnvSecretKey = "ibm-credentials.env"
 # Setting a password in a dict (should match)
 config["password"] = '8bxd576ba5a108c3b7374142bfd02992'
 config['secret'] = "9bxd576ba5a108c3b7374142bfd02993"
+
+# Should not match all lower case letters _ and - under 32 characters
+static final String SOME_VALUE_FOR_TOKEN = "_disposed_instrument";
