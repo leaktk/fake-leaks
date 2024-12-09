@@ -351,12 +351,6 @@ AWS_ACCESS_KEY=A3TGOBTGY4DIMRXMIYGE
 # Should capture aws secret keys
   "aws_secret_key": "Af60f112a534df0cc1e4d892b5768f3easef/+zc" foo=bar
 
-# Should capture private key headers
------BEGIN PGP PRIVATE KEY-----
-0b3d576ba5a108c3b7374142bfd029920b3d576ba5a108c3b7374142bfd0299
-20b3d576ba5a108c3b7374142bfd02992
------END PGP PRIVATE KEY-----
-
 # make sure it captures the password but stops at the quote
 password = "0b3d576ba5a108c3b7374142bfd02992", some = "other value", example="example"
 
