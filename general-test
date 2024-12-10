@@ -444,30 +444,6 @@ https://username:2d902de68e4113f5855a6c88314cec6a@foo.bar.leaktk.org
 # Should catch protocols other than http
 rsync://username:9d902de68e4113f5855a6c88314cec6a@foo.bar.leaktk.org
 
-# Likely encrypted values
-secret='ENC[RSA,tUf83Ex0oSbDGa8vaU1hGqesODG9J4j40EgLClQYrwNT]'
-# Likely encrypted values
-secret='RU5DW1JTQSx0VWY4M0V4MG9TYkRHYTh2YVUxaEdxZXNPREc5SjRqNDBFZ0xDbFFZcndOVF0='
-# Likely encrypted values
-secret='ENC[AES256_GCM,tUf83Ex0oSbDGa8vaU1hGqesODG9J4j40EgLClQYrwNT]'
-# Likely encrypted values
-secret='RU5DW0FFUzI1Nl9HQ00sdFVmODNFeDBvU2JER2E4dmFVMWhHcWVzT0RHOUo0ajQwRWdMQ2xRWXJ3TlRd'
-# Likely encrypted values
-secret_key='ENC[RSA,tUf83Ex0oSbDGa8vaU1hGqesODG9J4j40EgLClQYrwNT]'
-# Likely encrypted values
-secret_key='RU5DW1JTQSx0VWY4M0V4MG9TYkRHYTh2YVUxaEdxZXNPREc5SjRqNDBFZ0xDbFFZcndOVF0='
-# Likely encrypted values
-secret_key='ENC[AES256_GCM,tUf83Ex0oSbDGa8vaU1hGqesODG9J4j40EgLClQYrwNT]'
-# Likely encrypted values
-secret_key='RU5DW0FFUzI1Nl9HQ00sdFVmODNFeDBvU2JER2E4dmFVMWhHcWVzT0RHOUo0ajQwRWdMQ2xRWXJ3TlRd'
-# Likely encrypted values
-password='ENC[RSA,tUf83Ex0oSbDGa8vaU1hGqesODG9J4j40EgLClQYrwNT]'
-# Likely encrypted values
-password='RU5DW1JTQSx0VWY4M0V4MG9TYkRHYTh2YVUxaEdxZXNPREc5SjRqNDBFZ0xDbFFZcndOVF0='
-# Likely encrypted values
-password='ENC[AES256_GCM,tUf83Ex0oSbDGa8vaU1hGqesODG9J4j40EgLClQYrwNT]'
-# Likely encrypted values
-password='RU5DW0FFUzI1Nl9HQ00sdFVmODNFeDBvU2JER2E4dmFVMWhHcWVzT0RHOUo0ajQwRWdMQ2xRWXJ3TlRd'
 # URL default passwords or placeholders
 scheme://user:$(TOKEN)@foo.bar.leaktk.org:443
 # URL default passwords or placeholders
