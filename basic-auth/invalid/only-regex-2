@@ -1,0 +1,1 @@
+urlpass_re = re.compile(r'^.*?://[^:]+:(.*?)@.*?$')

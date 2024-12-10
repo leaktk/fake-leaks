@@ -1,0 +1,1 @@
+HIDDEN_URL_PASSWORD_RE = re.compile('^.*?://[^:]+:(.*?)@.*?$'
