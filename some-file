@@ -301,12 +301,6 @@ secret='/var/run/secrets/atomic-reactor/v2-registry-dockercfg'
 # General Secret placeholder or non-secret value
 secret='/path/to/password/file'
 # General Secret placeholder or non-secret value
-secret='ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-# General Secret placeholder or non-secret value
-secret='ghp_************************************'
-# General Secret placeholder or non-secret value
-secret='ghp_....................................'
-# General Secret placeholder or non-secret value
 secret='$(openssl rand -hex 16)'
 # General Secret placeholder or non-secret value
 secret='SOME_PREFIX_WITH_A_${variable}'
@@ -650,12 +644,6 @@ secret:'/run/kubernetes/secrets/oscontainer-registry/dockercfg'
 secret:'/var/run/secrets/atomic-reactor/v2-registry-dockercfg'
 # General Secret placeholder or non-secret value
 secret:'/path/to/password/file'
-# General Secret placeholder or non-secret value
-secret:'ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-# General Secret placeholder or non-secret value
-secret:'ghp_************************************'
-# General Secret placeholder or non-secret value
-secret:'ghp_....................................'
 # General Secret placeholder or non-secret value
 secret:'$(openssl rand -hex 16)'
 # General Secret placeholder or non-secret value
@@ -1001,12 +989,6 @@ secret:'\u4f60\u597d\u4e16\u754c'
 # General Secret placeholder or non-secret value
 'secret':'/path/to/password/file'
 # General Secret placeholder or non-secret value
-'secret':'ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-# General Secret placeholder or non-secret value
-'secret':'ghp_************************************'
-# General Secret placeholder or non-secret value
-'secret':'ghp_....................................'
-# General Secret placeholder or non-secret value
 'secret':'$(openssl rand -hex 16)'
 # General Secret placeholder or non-secret value
 'secret':'SOME_PREFIX_WITH_A_${variable}'
@@ -1350,12 +1332,6 @@ password='/run/kubernetes/secrets/oscontainer-registry/dockercfg'
 password='/var/run/secrets/atomic-reactor/v2-registry-dockercfg'
 # General Secret placeholder or non-secret value
 password='/path/to/password/file'
-# General Secret placeholder or non-secret value
-password='ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-# General Secret placeholder or non-secret value
-password='ghp_************************************'
-# General Secret placeholder or non-secret value
-password='ghp_....................................'
 # General Secret placeholder or non-secret value
 password='$(openssl rand -hex 16)'
 # General Secret placeholder or non-secret value
@@ -1701,12 +1677,6 @@ PASSWORD='/var/run/secrets/atomic-reactor/v2-registry-dockercfg'
 # General Secret placeholder or non-secret value
 PASSWORD='/path/to/password/file'
 # General Secret placeholder or non-secret value
-PASSWORD='ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-# General Secret placeholder or non-secret value
-PASSWORD='ghp_************************************'
-# General Secret placeholder or non-secret value
-PASSWORD='ghp_....................................'
-# General Secret placeholder or non-secret value
 PASSWORD='$(openssl rand -hex 16)'
 # General Secret placeholder or non-secret value
 PASSWORD='SOME_PREFIX_WITH_A_${variable}'
@@ -2050,12 +2020,6 @@ secret_key='/run/kubernetes/secrets/oscontainer-registry/dockercfg'
 secret_key='/var/run/secrets/atomic-reactor/v2-registry-dockercfg'
 # General Secret placeholder or non-secret value
 secret_key='/path/to/password/file'
-# General Secret placeholder or non-secret value
-secret_key='ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-# General Secret placeholder or non-secret value
-secret_key='ghp_************************************'
-# General Secret placeholder or non-secret value
-secret_key='ghp_....................................'
 # General Secret placeholder or non-secret value
 secret_key='$(openssl rand -hex 16)'
 # General Secret placeholder or non-secret value
@@ -2401,12 +2365,6 @@ SECRET_KEY='/var/run/secrets/atomic-reactor/v2-registry-dockercfg'
 # General Secret placeholder or non-secret value
 SECRET_KEY='/path/to/password/file'
 # General Secret placeholder or non-secret value
-SECRET_KEY='ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-# General Secret placeholder or non-secret value
-SECRET_KEY='ghp_************************************'
-# General Secret placeholder or non-secret value
-SECRET_KEY='ghp_....................................'
-# General Secret placeholder or non-secret value
 SECRET_KEY='$(openssl rand -hex 16)'
 # General Secret placeholder or non-secret value
 SECRET_KEY='SOME_PREFIX_WITH_A_${variable}'
@@ -2750,12 +2708,6 @@ secret-key='/run/kubernetes/secrets/oscontainer-registry/dockercfg'
 secret-key='/var/run/secrets/atomic-reactor/v2-registry-dockercfg'
 # General Secret placeholder or non-secret value
 secret-key='/path/to/password/file'
-# General Secret placeholder or non-secret value
-secret-key='ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-# General Secret placeholder or non-secret value
-secret-key='ghp_************************************'
-# General Secret placeholder or non-secret value
-secret-key='ghp_....................................'
 # General Secret placeholder or non-secret value
 secret-key='$(openssl rand -hex 16)'
 # General Secret placeholder or non-secret value
@@ -3101,12 +3053,6 @@ imagePullSecret="/var/run/secrets/atomic-reactor/v2-registry-dockercfg"
 # General Secret placeholder or non-secret value
 imagePullSecret="/path/to/password/file"
 # General Secret placeholder or non-secret value
-imagePullSecret="ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-# General Secret placeholder or non-secret value
-imagePullSecret="ghp_************************************"
-# General Secret placeholder or non-secret value
-imagePullSecret="ghp_...................................."
-# General Secret placeholder or non-secret value
 imagePullSecret="$(openssl rand -hex 16)"
 # General Secret placeholder or non-secret value
 imagePullSecret="SOME_PREFIX_WITH_A_${variable}"
@@ -3450,12 +3396,6 @@ secretkey='/run/kubernetes/secrets/oscontainer-registry/dockercfg'
 secretkey='/var/run/secrets/atomic-reactor/v2-registry-dockercfg'
 # General Secret placeholder or non-secret value
 secretkey='/path/to/password/file'
-# General Secret placeholder or non-secret value
-secretkey='ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-# General Secret placeholder or non-secret value
-secretkey='ghp_************************************'
-# General Secret placeholder or non-secret value
-secretkey='ghp_....................................'
 # General Secret placeholder or non-secret value
 secretkey='$(openssl rand -hex 16)'
 # General Secret placeholder or non-secret value
@@ -3801,12 +3741,6 @@ secretkey='/var/run/secrets/atomic-reactor/v2-registry-dockercfg', some = 'other
 # General Secret placeholder or non-secret value
 secretkey='/path/to/password/file', some = 'other value'
 # General Secret placeholder or non-secret value
-secretkey='ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', some = 'other value'
-# General Secret placeholder or non-secret value
-secretkey='ghp_************************************', some = 'other value'
-# General Secret placeholder or non-secret value
-secretkey='ghp_....................................', some = 'other value'
-# General Secret placeholder or non-secret value
 secretkey='$(openssl rand -hex 16)', some = 'other value'
 # General Secret placeholder or non-secret value
 secretkey='SOME_PREFIX_WITH_A_${variable}', some = 'other value'
@@ -4150,12 +4084,6 @@ secret_access_key='/run/kubernetes/secrets/oscontainer-registry/dockercfg'
 secret_access_key='/var/run/secrets/atomic-reactor/v2-registry-dockercfg'
 # General Secret placeholder or non-secret value
 secret_access_key='/path/to/password/file'
-# General Secret placeholder or non-secret value
-secret_access_key='ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
-# General Secret placeholder or non-secret value
-secret_access_key='ghp_************************************'
-# General Secret placeholder or non-secret value
-secret_access_key='ghp_....................................'
 # General Secret placeholder or non-secret value
 secret_access_key='$(openssl rand -hex 16)'
 # General Secret placeholder or non-secret value
@@ -4501,12 +4429,6 @@ Path to Secret: "/var/run/secrets/atomic-reactor/v2-registry-dockercfg"
 # General Secret placeholder or non-secret value
 Path to Secret: "/path/to/password/file"
 # General Secret placeholder or non-secret value
-Path to Secret: "ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-# General Secret placeholder or non-secret value
-Path to Secret: "ghp_************************************"
-# General Secret placeholder or non-secret value
-Path to Secret: "ghp_...................................."
-# General Secret placeholder or non-secret value
 Path to Secret: "$(openssl rand -hex 16)"
 # General Secret placeholder or non-secret value
 Path to Secret: "SOME_PREFIX_WITH_A_${variable}"
@@ -4850,12 +4772,6 @@ Path to Secret: "\u4f60\u597d\u4e16\u754c"
 "secret": "/var/run/secrets/atomic-reactor/v2-registry-dockercfg"
 # General Secret placeholder or non-secret value
 "secret": "/path/to/password/file"
-# General Secret placeholder or non-secret value
-"secret": "ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-# General Secret placeholder or non-secret value
-"secret": "ghp_************************************"
-# General Secret placeholder or non-secret value
-"secret": "ghp_...................................."
 # General Secret placeholder or non-secret value
 "secret": "$(openssl rand -hex 16)"
 # General Secret placeholder or non-secret value
@@ -5201,12 +5117,6 @@ Path to Secret: "\u4f60\u597d\u4e16\u754c"
 # General Secret placeholder or non-secret value
 "password": "/path/to/password/file"
 # General Secret placeholder or non-secret value
-"password": "ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-# General Secret placeholder or non-secret value
-"password": "ghp_************************************"
-# General Secret placeholder or non-secret value
-"password": "ghp_...................................."
-# General Secret placeholder or non-secret value
 "password": "$(openssl rand -hex 16)"
 # General Secret placeholder or non-secret value
 "password": "SOME_PREFIX_WITH_A_${variable}"
@@ -5541,12 +5451,6 @@ Path to Secret: "\u4f60\u597d\u4e16\u754c"
 # General Secret placeholder or non-secret value
 <password>/path/to/password/file</
 # General Secret placeholder or non-secret value
-<password>ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</
-# General Secret placeholder or non-secret value
-<password>ghp_************************************</
-# General Secret placeholder or non-secret value
-<password>ghp_....................................</
-# General Secret placeholder or non-secret value
 <password>$(openssl rand -hex 16)</
 # General Secret placeholder or non-secret value
 <password>SOME_PREFIX_WITH_A_${variable}</
@@ -5870,12 +5774,6 @@ Path to Secret: "\u4f60\u597d\u4e16\u754c"
 <secret>/var/run/secrets/atomic-reactor/v2-registry-dockercfg</
 # General Secret placeholder or non-secret value
 <secret>/path/to/password/file</
-# General Secret placeholder or non-secret value
-<secret>ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</
-# General Secret placeholder or non-secret value
-<secret>ghp_************************************</
-# General Secret placeholder or non-secret value
-<secret>ghp_....................................</
 # General Secret placeholder or non-secret value
 <secret>$(openssl rand -hex 16)</
 # General Secret placeholder or non-secret value
@@ -6201,12 +6099,6 @@ Path to Secret: "\u4f60\u597d\u4e16\u754c"
 # General Secret placeholder or non-secret value
 <FooSecret id="new">/path/to/password/file</
 # General Secret placeholder or non-secret value
-<FooSecret id="new">ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</
-# General Secret placeholder or non-secret value
-<FooSecret id="new">ghp_************************************</
-# General Secret placeholder or non-secret value
-<FooSecret id="new">ghp_....................................</
-# General Secret placeholder or non-secret value
 <FooSecret id="new">$(openssl rand -hex 16)</
 # General Secret placeholder or non-secret value
 <FooSecret id="new">SOME_PREFIX_WITH_A_${variable}</
@@ -6530,12 +6422,6 @@ secret=/run/kubernetes/secrets/oscontainer-registry/dockercfg
 secret=/var/run/secrets/atomic-reactor/v2-registry-dockercfg
 # General Secret placeholder or non-secret value
 secret=/path/to/password/file
-# General Secret placeholder or non-secret value
-secret=ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-# General Secret placeholder or non-secret value
-secret=ghp_************************************
-# General Secret placeholder or non-secret value
-secret=ghp_....................................
 # General Secret placeholder or non-secret value
 secret=$(openssl rand -hex 16)
 # General Secret placeholder or non-secret value

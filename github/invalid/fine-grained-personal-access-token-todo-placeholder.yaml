@@ -1,0 +1,4 @@
+# integrations:
+#   github:
+#     - host: github.com
+#       token: github_pat_TODO

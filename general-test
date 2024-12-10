@@ -420,24 +420,6 @@ define('LOGGED_IN_SALT',   'WTc*{p+XT((_#^NxhoU)[7NAg};Q?`+0wpkia>oA]hF-TB2lC GM
 # Nonce Salt
 define('NONCE_SALT',       '^[_9^w_,UPMuJ2-}7=y<|v=y$#xftY[klEW3zt,Y}bB tG4d):p9Fd;$imF[lGqR');
 
-# See https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#githubs-token-formats
-<access-token>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</access-token>
-
-# See https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#githubs-token-formats
-<access-token>ghp_16C7e42F292c6912E7710c838347Ae178B4a</access-token>
-
-# See https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#githubs-token-formats
-token='gho_16C7e42F292c6912E7710c838347Ae178B4a'
-
-# See https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#githubs-token-formats
-'gt-token': 'ghu_16C7e42F292c6912E7710c838347Ae178B4a'
-
-# See https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#githubs-token-formats
-ghs_16C7e42F292c6912E7710c838347Ae178B4a
-
-# See https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#githubs-token-formats
-ghr_16C7e42F292c6912E7710c838347Ae178B4a
-
 # From gitlab.com
 my_cred=glpat-LwnfdsSHX1aSGxsqsPUX
 
@@ -663,8 +645,6 @@ username: NEW_VALUE")
 user456:$jhI1AC9LG01KrQS$FzPCZHMe$jXiw5.8UevKx29pRH4AsT/
 # this is close to the regex for an aws key
 _Somef0lder/or/Somepath/that0snotakeyyepa.sh
-# It is too short to be a real token
-ghr_16C7e42F292c69
 # ignore these arn matches
 administration_role_arn: arn:aws:iam::123456789012:role/AWSCloudFormationStackSetAdministrationRole
 # ignore these arn matches
@@ -673,8 +653,6 @@ arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly
 if awsEnvVars[i].Name == RegistryStorageS3RegionendpointEnvVarKey && bsl.Spec.Config[S3URL] != "" {
 # Placeholder value for wordpress passwords
 define('DB_PASSWORD', 'password');
-# Placeholder value for an Access Token
-GITHUB_PERSONAL_ACCESS_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 # Should not capture things formated like a mg api key without mg/mailgun in the prefix
 some-random-thing=key-fb959af04c12d5d66091256c2b2076d0
 # from code
