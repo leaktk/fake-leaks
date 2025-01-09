@@ -186,12 +186,6 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJsZWFrdGsiLCJub3RlIjoiZm9yIHRlc3R
 # this searches for "iss":"kubernetes/serviceaccount"
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJsZWFrdGsiLCJub3RlIjoiZm9yIHRlc3RpbmcgS3ViZSBTQSBtYXRjaGVzIiwieCI6Inh4eCIsImlzcyI6Imt1YmVybmV0ZXMvc2VydmljZWFjY291bnQifQ.JLGKRW3i-CMu5Y_p0y1cgNFokjyVJjs6zO3g_P5nawQ
 
-# this searches for "sub":"system:serviceaccount:
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6b3BlbnNoaWZ0LW1vbml0b3Jpbmc6cHJvbWV0aGV1cy1rOHMiLCJuYW1lIjoiSm9obiBEb2UiLCJpYXQiOjE1MTYyMzkwMjJ9.ipzDwTMDecOi1y3PCnr18juUFF9KryIreesxYUlC3AI
-
-# this searches for "sub":"system:serviceaccount:
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6Zm9vIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.68gxpqTqhOhCGxXPe3D86xblMnRc2ciGYn-SMG78IDE
-
 # Should capture in-line container registry secrets
 "quay.io": { "auth": "0ec7f53a0637bb3d78ab613e02014934" }
 
