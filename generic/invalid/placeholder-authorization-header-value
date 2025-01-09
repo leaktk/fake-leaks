@@ -1,0 +1,1 @@
+curl -H 'Authorization: Bearer INSERT_TOKEN_HERE' https://github.com
