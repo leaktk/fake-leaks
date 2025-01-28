@@ -1,0 +1,7 @@
+{
+  "auths": {
+    "quay.io": {
+      "auth": "<base64 encoded string of user:password>"
+    }
+  }
+}
