@@ -2,28 +2,6 @@
 # NOTE:
 # THESE SHOULD BE MOVED INTO THEIR OWN FILES UNDER THE `generic` FOLDER
 ###############################################################################
-
-# Different types of password hashes
-$y$j9T$OO/cvWZ17nxP6XzO1jNt5/$wtUrYmUAzg6p1hdQ/WJtsjq7gJ6if4dP6LcDlXedZU6
-
-# Different types of password hashes
-$gy$j9T$7Q9Z.KDwQ06akx6VxwMpn.$en8X0EUE.xdbTSDZlftyzqDEcXaU7rORvdWLhaPygB2
-
-# Different types of password hashes
-$2b$05$YuHSRtnwiF7AbEd3Xe9rauK0N8EHKHoajjAPQz/29QMGdbisxy.3.
-
-# Different types of password hashes
-$6$cjvUY6xnMEVNYUv6$ttG2bz2lglfS4rliP.T7Ozaak7bPVg5ccZ.E.H5F09jIOfvG/yJb5nfQ3tN6uMiH7Z1t/AXDHUgD5xdqE6MUu1
-
-# Different types of password hashes
-$5$8pFTUnUr.HhP3O52$Fl1S4nX1p0PONBIcG7PN5jTQAtulYNf2AQCJyXV6Dt.
-
-# Different types of password hashes
-$md5,rounds=89650$IU7ELX9N$$VUWQHUYZkb7n3SpAmBHq0/
-
-# Different types of password hashes
-$1$lMsBjmBR$3UpSfv5QTMtGoneFKCIJW1
-
 # Test General Secret with optional notsecret tag
 password = 'swke6BX0-14v3rYb2Ix32AIfTh9j_H_671dcf8gjpdTbsThiJfxapnAqFs8_kiW4ME-ZPxLmVEgmTxxwlb8Xvw'
 
