@@ -1,0 +1,12 @@
+// https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:supported_transport_protocols
+repositories {
+    maven {
+        url "s3://myCompanyBucket/maven2"
+        credentials(AwsCredentials) {
+            accessKey "C2@zQ5!X9Rk&"
+            secretKey "H5l@N8!9p#Yq"
+            // optional
+            sessionToken "C3r%U9#p!Za4"
+        }
+    }
+}
