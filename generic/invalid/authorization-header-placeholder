@@ -1,0 +1,1 @@
+curl -H "Authorization: Bearer ${VAR_PW_VALUE}" https://leaktk.org
