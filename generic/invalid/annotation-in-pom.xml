@@ -1,0 +1,5 @@
+<replace token="@javax.annotation.Generated"
+  value="@jakarta.annotation.Generated"
+  dir="target/generated-sources/protobuf">
+  <include name="**/*.java" />
+</replace>
