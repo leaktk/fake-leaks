@@ -1,0 +1,13 @@
+<configuration>
+  <target>
+    <echo>Copying XSD schema to be included in JAR</echo>
+    <copy file="${project.build.directory}/classes/camel-spring.xsd" preservelastmodified="true" tofile="${project.build.directory}/schema/camel-spring.xsd"/>
+    <copy file="${project.build.directory}/classes/camel-spring.xsd" preservelastmodified="true" tofile="${project.build.directory}/schema/camel-spring-v${camel.schema.version}.xsd"/>
+    <replace file="${project.build.directory}/schema/camel-spring-v${camel.schema.version}.xsd" preservelastmodified="true" token="&quot;http://camel.apache.org/schema/spring&quot;" value="&quot;http://camel.apache.org/schema/spring/v${camel.schema.version}&quot;"/>
+    <copy preservelastmodified="true" todir="${project.build.directory}/classes">
+      <fileset dir="${project.build.directory}/schema">
+        <exclude name="**/*.class"/>
+      </fileset>
+    </copy>
+  </target>
+</configuration>
