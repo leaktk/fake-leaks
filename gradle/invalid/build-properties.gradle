@@ -1,0 +1,46 @@
+// https://github.com/gzu-liyujiang/AndroidUtilCode/blob/dfa36bb8bc1ca7d97bbf2c48b0b50132631ef2f5/buildApp.gradle#L103
+dependencies {
+    // LeakCanary
+    debugImplementation Config.depConfig.leakcanary_android.dep
+    debugImplementation Config.depConfig.leakcanary_support_fragment.dep
+    releaseImplementation Config.depConfig.leakcanary_android_no_op.dep
+
+    debugImplementation Config.depConfig.lib_utildebug.dep
+    releaseImplementation Config.depConfig.lib_utildebug_no_op.dep
+
+    // 根据 Config.pkgConfig 来依赖所有 pkg
+    for (def entrySet : ConfigUtils.getApplyPkgs().entrySet()) {
+        api entrySet.value.dep
+    }
+
+    if (Config.depConfig.feature_mock.isApply) {
+        api Config.depConfig.feature_mock.dep
+    }
+}
+
+def getSuffix() {
+    if (project.path == ":feature:launcher:app") return ""
+    return project.path.replace(":", "_").substring(":feature".length(), project.path.length() - ":app".length())
+}
+
+def configSigning() {
+
+    File signPropertiesFile = file("${rootDir.path}/sign/keystore.properties")
+    if (!signPropertiesFile.exists()) return
+
+    GLog.d("${project.toString()} sign start...")
+    project.android {
+        Properties properties = new Properties()
+        properties.load(new FileInputStream(signPropertiesFile))
+        signingConfigs {
+            release {
+                storeFile new File(signPropertiesFile.getParent(), properties['keystore'])
+                storePassword properties['storePassword']
+                keyAlias properties['keyAlias']
+                keyPassword properties['keyPassword']
+            }
+        }
+        buildTypes.release.signingConfig signingConfigs.release
+    }
+    GLog.d("${project.toString()} sign end...")
+}
