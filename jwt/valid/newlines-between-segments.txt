@@ -1,0 +1,7 @@
+we have to generate the token to show that we are admin user and we are allowed to perform crud operations.
+
+Token - JWT - Json web token
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.
+eyJpYXQiOjE3MDEwMjUxNjAsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTcwMTA2ODM2MCwidXNlcklkIjoiNjA3NyJ9.
+-FNq40iWIzaGaujG0aABU2zrWurlFfnm7ls_391NjkU

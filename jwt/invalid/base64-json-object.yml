@@ -1,0 +1,3 @@
+remote_write:
+  - url: https://prometheus-prod-10-prod-us-central-0.grafana.net/api/prom/push
+    token: eyJvIjoiNjEwODMxIiwibiI6InN0YWNrLTMyNTEzMi1obS1iZW5jaG1hcmstY29uc3VtZXItc2VydmVyIiwiayI6IjI1MTY3cm1TMTJyenJPc201M3hFU3U5ayIsIm0iOnsiciI6ImV1In19
