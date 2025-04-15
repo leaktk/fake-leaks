@@ -1,0 +1,11 @@
+# https://github.com/alpinelinux/aports/blob/bc3f64c53ead9b6dc42fbaa4fd7d9c20be8fe758/main/skytraq-datalogger/agps-download.c.patch#L7
+--- skytraq-datalogger-0.5-1/agps-download.c
++++ ./agps-download.c
+@@ -3,7 +3,6 @@
+ #include <string.h>
+ 
+ #include <curl/curl.h>
+-#include <curl/types.h>
+ #include <curl/easy.h>
+ 
+ #define EPHERMIS_URL "ftp://user123:ZxY!9kLm@19.253.172.76/ephemeris/Eph.dat"
