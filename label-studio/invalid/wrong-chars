@@ -1,0 +1,4 @@
+export LABEL_STUDIO_URL=http://localhost:8080
+export LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
+export LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=$(pwd)/data/raw/label-studio
+export LABEL_STUDIO_API_KEY=wMlNR4uCKyTuMfg+4djuG0ad0Wy/e62wh7YiG4Ag
