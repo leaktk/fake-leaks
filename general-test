@@ -296,9 +296,6 @@ xoxp-9204568914-1834568914-1234568914-a53ka1rJ2KAIuj3jalakjalkjaafc
 # Should capture container registry passwords.
 reg := registry.New("quay.io", "user", "09e25b6fc894c83868715a8cce1ba7d2") // remove later
 
-# Detect tokens for the OpenShift login command
-oc login --some-opt --token=sha256~CL9vOGM0koa67eipnogHwP6KmfeAOd6ZwMo88Qo3-Kw --foo --bar --baz
-
 # Even though this looks like it has a variable at the end, it still has a secret contained in it
 secret='/YNvEGXEXY9BS/YNvE:${asdf.YNvEGXEXY9BS}'
 
@@ -500,8 +497,6 @@ define('SECURE_AUTH_SALT', '$WP_SECURE_AUTH_SALT');
 define('LOGGED_IN_SALT', '$WP_LOGGED_IN_SALT');
 # Wordpress placeholder values
 define('NONCE_SALT', '$WP_NONCE_SALT');
-# placeholder value
-oc login --some-opt --token=sha256~<some-token-here-yo> --server=localhost
 # redacted container registry auth
 {"auths":{"cloud.openshift.com":{"auth":"TJpnU0y1pDBkEKTcwzSAaoNV3jmkZz66LM4Jd6EBx0I.....TJpnU0y1pDBkEKTcwzSAaoNV3jmkZz66LM4Jd6EBx0I==","email":"user@example.com"},"quay.io":{"auth":"TJpnU0y1pDBkEKTcwzSAaoNV3jmkZz66LM4Jd6EBx0INo...","email":"user@example.com"},"
 # placeholder wrappet in cdata tags

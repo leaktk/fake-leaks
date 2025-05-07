@@ -1,0 +1,1 @@
+ oc login --some-opt --token=sha256~<some-token-here-yo> --server=localhost
