@@ -1,0 +1,1 @@
+/path/to/sonar-scanner.sh -X -D"sonar.login=d81afdd966e73e0341929425660e841640700da5"
