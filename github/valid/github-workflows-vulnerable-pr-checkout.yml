@@ -1,0 +1,39 @@
+# WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+#
+# This workflow is intentionally vulnerable and is provided for educational
+# purposes only (e.g., for testing security tooling).
+# DO NOT USE THIS PATTERN IN PRODUCTION WORKFLOWS.
+#
+# WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+
+name: Vulnerable PR Head Checkout
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  # IMPORTANT: These permissions (e.g., contents: write) make the vulnerability more severe.
+  # A real-world attack could use this to push malicious code to the main branch.
+  # read all permissions, write to contents and pull-requests
+  contents: write
+  pull-requests: write
+  id-token: write # If OIDC is used, this could also be exploited
+  secrets: write # Allows access to repository secrets
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout PR Head (VULNERABLE STEP)
+        uses: actions/checkout@v4
+        with:
+          # This is the critical part of the vulnerability:
+          # Checking out the code from the untrusted PR's head SHA.
+          # The GITHUB_TOKEN used here has elevated permissions due to pull_request_target.
+          ref: ${{ github.event.pull_request.head.sha }}
+          token: ${{ secrets.GITHUB_TOKEN }} # Uses the base repository's GITHUB_TOKEN
+
+      - name: Execute untrusted script (VULNERABLE EXECUTION)
+        run: ./build
