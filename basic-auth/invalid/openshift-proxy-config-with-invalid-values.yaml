@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: proxy-credentials
+  namespace: production-ci
+type: Opaque
+stringData:
+  proxy-url: "http://proxyuser:proxypass@proxy.company.com:3128"
