@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Configuration for the deployment script
+# This file sets the necessary environment variables for the application.
+
+export APP_ENV="production"
+export DATABASE_HOST="prod.database.internal"
+export PUBLIC_API_KEY="fewc9LVRMbwMBBxdp36b1V48_lM-326LX0SGZM8ZR48"
+export TIMEOUT="30"
+
+echo "Environment variables loaded."
