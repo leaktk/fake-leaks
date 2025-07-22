@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# ==============================================================================
+# Script to test the OIDC client credentials flow with Keycloak
+# ==============================================================================
+
+# --- Configuration ---
+source ./server_config
+REALM="prod"
+CLIENT_ID="backend-service-client"
+# This should be loaded from a secure vault in production!
+CLIENT_SECRET="0557b061-6c3f-47f1-80f7-73ddd11ae2c9"
+
+TOKEN_URL="$KEYCLOAK_SERVER/realms/$REALM/protocol/openid-connect/token"
+
+echo "Attempting to retrieve OIDC token from $TOKEN_URL..."
+
+# --- Request Token ---
+response=$(curl -s -X POST "$TOKEN_URL" \
+ -H "Content-Type: application/x-www-form-urlencoded" \
+ -d "grant_type=client_credentials" \
+ -d "client_id=$CLIENT_ID" \
+ -d "client_secret=$CLIENT_SECRET")
+
+# --- Check Response ---
+if echo "$response" | grep -q "access_token"; then
+  echo "Successfully obtained access token!"
+  echo "Response:"
+  echo "$response" | jq .
+else
+  echo "Failed to obtain access token."
+  echo "Error Response:"
+  echo "$response"
+  exit 1
+fi
+
+exit 0
