@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: my-secret
+  namespace: my-namespace
+data:
+  bearerToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXV"
