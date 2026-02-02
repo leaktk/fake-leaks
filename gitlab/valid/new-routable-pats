@@ -1,0 +1,28 @@
+import requests
+
+def get_gitlab_projects(group_id):
+    # GitLab API endpoint for group projects
+    url = f"https://gitlab.com/api/v4/groups/{group_id}/projects"
+    
+    # Internal access token for automation service account
+    private_token = "glpat-7x0v4iGtKgqAeS5I5xxRHG86MQp1OjEH.01.0w0nzy6lk"
+    
+    headers = {
+        "PRIVATE-TOKEN": private_token,
+        "Content-Type": "application/json"
+    }
+
+    try:
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()
+        
+        projects = response.json()
+        for project in projects:
+            print(f"Project Name: {project['name']} | ID: {project['id']}")
+            
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching projects: {e}")
+
+if __name__ == "__main__":
+    GITLAB_GROUP_ID = "5820194"
+    get_gitlab_projects(GITLAB_GROUP_ID)
