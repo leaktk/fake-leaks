@@ -1,0 +1,1 @@
+lastIndex = Template.lastIndex, lastSignificantToken = match3[0], match3[1] === \"${\" ? (lastSignificantToken = \"?InterpolationInTemplate\", stack.push({
