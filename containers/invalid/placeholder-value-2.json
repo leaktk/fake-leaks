@@ -1,0 +1,7 @@
+{
+  "auths": {
+    "quay.io": {
+      "auth": "REPLACE_WITH_BASE64_ENCODED_USERNAME_PASSWORD"
+    }
+  }
+}
