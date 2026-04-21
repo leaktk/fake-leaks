@@ -1,0 +1,8 @@
+Metadata: label=JWT Token without signature (invalid), type=jwt, algorithm=none, context=unsigned JWT, generator=manual, valid=false
+
+# JWT token without signature - header.payload with no signature part
+# This should be flagged as suspicious but may not be a valid JWT
+
+eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJzdWIiOiJ1c2VyMTIzIiwibmFtZSI6IlRlc3QgVXNlciIsImlhdCI6MTcwOTMyMDAwMH0
+
+# Note: No third part (signature) - this is an insecure JWT

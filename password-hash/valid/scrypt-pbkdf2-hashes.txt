@@ -1,0 +1,31 @@
+# Metadata: label=Scrypt and PBKDF2 password hashes, type=password_hash, hash_type=scrypt+pbkdf2, context=hash examples, generator=secret_generator.py
+
+# === Scrypt hashes ===
+
+# Password: password123
+$scrypt$ln=16,r=8,p=1$c29tZXNhbHQAAAAAAAAAAA$1bC2dE3fG4hI5jK6lM7nO8pQ9rS0tU1vW2xY3zA4bC5dE6fG7hI8jK9lM0nO1pQ2rS3tU4vW5xY6zA7bC8dE9fG0hI1jK2lM3nO4pQ5rS6tU7vW8xY9zA0bC1dE2fG3hI4jK5lM
+
+# Password: admin2024
+$scrypt$ln=15,r=8,p=1$cmFuZG9tc2FsdDEAAAAA$5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c
+
+# Password: SecurePass!
+$scrypt$ln=17,r=8,p=2$c2FsdHlzYWx0MgAAAA$9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a
+
+# === PBKDF2 hashes (Django format) ===
+
+# Password: djangopass
+pbkdf2_sha256$260000$5f6a7b8c9d0e1f2a3b4c5d$1bC2dE3fG4hI5jK6lM7nO8pQ9rS0tU1vW2xY3zA4bC5dE6fG7hI8jK=
+
+# Password: webapppass
+pbkdf2_sha256$260000$9d0e1f2a3b4c5d6e7f8a9b$3eF4gH5iJ6kL7mN8oP9qR0sT1uV2wX3yZ4aB5cD6eF7gH8iJ9kL0mN=
+
+# Password: applicationkey
+pbkdf2_sha256$320000$3f4a5b6c7d8e9f0a1b2c3d$7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f=
+
+# === PBKDF2 hashes (generic format) ===
+
+# sha256, 100000 iterations
+pbkdf2:sha256:100000$c29tZXNhbHQ=$5hI6jK7lM8nO9pQ0rS1tU2vW3xY4zA5bC6dE7fG8hI9jK0lM1nO2pQ3rS4tU5vW6xY7zA8bC9dE0fG1hI2jK3lM4nO
+
+# sha512, 150000 iterations
+pbkdf2:sha512:150000$cmFuZG9tc2FsdA==$9zA1bC2dE3fG4hI5jK6lM7nO8pQ9rS0tU1vW2xY3zA4bC5dE6fG7hI8jK9lM0nO1pQ2rS3tU4vW5xY6zA7bC8dE9fG0hI1jK2lM3nO4pQ5rS6tU7vW8xY9zA0bC1dE2fG3hI4jK5lM6nO7pQ8rS9tU0vW1xY2zA3bC4dE5fG6hI7jK8lM9nO0pQ1rS2tU3vW4xY5zA6bC7dE8fG9hI0jK1lM2nO3pQ4rS5tU6vW7xY8zA9bC0dE1fG2hI3jK4lM5nO6pQ7rS8tU9vW0xY1zA2bC3dE4fG5hI6jK7lM8nO9pQ0rS1tU2vW3xY4zA5bC6dE7fG8hI9jK0lM1nO

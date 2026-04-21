@@ -1,0 +1,20 @@
+{
+  "_comment": "Metadata: label=MySQL connection strings in JSON config, type=database_connection, db_type=mysql, context=JSON configuration, generator=manual",
+  "database": {
+    "connections": {
+      "primary": {
+        "url": "mysql://root:Mysql_P@ssw0rd_2024@mysql-primary.example.com:3306/production",
+        "pool_size": 20
+      },
+      "replica": {
+        "url": "mysql://readonly:R3plica_Pass@mysql-replica.example.com:3306/production",
+        "pool_size": 10
+      },
+      "analytics": {
+        "url": "mysql://analytics_user:Analyt1cs!2024@analytics-db.example.com:3306/analytics_db?charset=utf8mb4",
+        "pool_size": 5
+      }
+    },
+    "legacy_format": "Server=mysql.old.example.com;Port=3306;Database=legacy_db;Uid=legacy_user;Pwd=L3gacy_Passw0rd!"
+  }
+}

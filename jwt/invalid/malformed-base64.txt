@@ -1,0 +1,7 @@
+Metadata: label=Malformed JWT with invalid base64, type=jwt, context=malformed token, generator=manual, valid=false
+
+# This looks like a JWT but has invalid base64 encoding
+
+eyJhbGciOi!!!InvalidBase64!!!InR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.InvalidSignature###Here
+
+# Should not match as valid JWT due to invalid base64 characters

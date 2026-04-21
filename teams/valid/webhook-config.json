@@ -1,0 +1,14 @@
+{
+  "_comment": "Metadata: label=Microsoft Teams webhooks, type=webhook_url, provider=teams, context=JSON configuration, generator=manual",
+  "teams_webhooks": {
+    "general_channel": "https://outlook.office.com/webhook/5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c@1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d/IncomingWebhook/9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a/3f4a5b6c-7d8e-9f0a-1b2c-3d4e5f6a7b8c",
+    "alerts_channel": "https://outlook.office.com/webhook/1bC2dE3f-G4hI-5jK6-lM7n-O8pQ9rS0tU1v@7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e2f/IncomingWebhook/5hI6jK7lM8nO9pQ0rS1tU2vW3xY4zA5b/9zA1bC2d-E3fG-4hI5-jK6l-M7nO8pQ9rS0",
+    "deployments": "https://outlook.office.com/webhook/3gH4iJ5k-L6mN-7oP8-qR9s-T0uV1wX2yZ3a@5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c/IncomingWebhook/1bC2dE3fG4hI5jK6lM7nO8pQ9rS0tU1v/5xY6zA7b-C8dE-9fG0-hI1j-K2lM3nO4pQ5"
+  },
+  "connector_cards": {
+    "production_alerts": {
+      "webhook_url": "https://outlook.office365.com/webhook/7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a@9f0a1b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c/IncomingWebhook/Example_Teams_Webhook_Token_HERE_1234567890/1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "description": "Production environment alerts"
+    }
+  }
+}

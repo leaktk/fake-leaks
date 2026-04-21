@@ -1,0 +1,8 @@
+Metadata: label=Expired JWT Token, type=jwt, algorithm=HS256, context=expired token, generator=manual, valid=false, expired=true
+
+# JWT token that expired in 2020 - still syntactically valid but expired
+# exp claim is set to 1577836800 (January 1, 2020)
+
+JWT_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvbGQtdXNlciIsIm5hbWUiOiJFeHBpcmVkIFVzZXIiLCJpYXQiOjE1NDYzMDA4MDAsImV4cCI6MTU3NzgzNjgwMH0.gI8jK9lM0nO1pQ2rS3tU4vW5xY6zA7bC8dE9fG0hI1jK
+
+# This token is expired but may still be detected by secret scanners
