@@ -20,7 +20,9 @@ import os
 import random
 import secrets
 import string
+import struct
 import uuid
+import zlib
 from datetime import datetime, timedelta, timezone
 from typing import Dict, Any, Optional, List
 
@@ -63,6 +65,119 @@ class SecretGenerator:
         """Generate random alphanumeric string"""
         return ''.join(secrets.choice(string.ascii_letters + string.digits) for _ in range(length))
 
+    @staticmethod
+    def random_base32(length: int) -> str:
+        """Generate random base32 string (A-Z2-7)"""
+        charset = string.ascii_uppercase + '234567'
+        return ''.join(secrets.choice(charset) for _ in range(length))
+
+    @staticmethod
+    def to_base36(num: int, min_length: int = 1) -> str:
+        """Convert integer to base36 string"""
+        if num == 0:
+            return '0' * min_length
+        charset = string.digits + string.ascii_lowercase
+        result = []
+        while num:
+            num, rem = divmod(num, 36)
+            result.append(charset[rem])
+        return ''.join(reversed(result)).zfill(min_length)
+
+    @staticmethod
+    def to_base62(num: int, min_length: int = 6) -> str:
+        """Convert integer to base62 string (for checksums)"""
+        if num == 0:
+            return '0' * min_length
+        charset = string.digits + string.ascii_uppercase + string.ascii_lowercase
+        result = []
+        while num:
+            num, rem = divmod(num, 62)
+            result.append(charset[rem])
+        return ''.join(reversed(result)).zfill(min_length)
+
+    @staticmethod
+    def crc32_checksum(data: str, base62_encode: bool = True, length: int = 6) -> str:
+        """Calculate CRC32 checksum of string"""
+        crc_val = zlib.crc32(data.encode('utf-8'))
+        if base62_encode:
+            return SecretGenerator.to_base62(crc_val, min_length=length)
+        return SecretGenerator.to_base36(crc_val, min_length=length)
+
+    # === Helper methods for specific token types ===
+
+    def _generate_github_token(self, prefix: str, total_length: int) -> str:
+        """Generate GitHub token with CRC32 checksum"""
+        # GitHub tokens: last 6 chars are base62-encoded CRC32 checksum
+        body_length = total_length - 6
+        body = self.random_alphanum(body_length)
+        token_prefix = f"{prefix}{body}"
+        checksum = self.crc32_checksum(token_prefix, base62_encode=True, length=6)
+        return f"{token_prefix}{checksum}"
+
+    def _generate_github_token_checksum(self, total_length: int) -> str:
+        """Generate GitHub token body with checksum (no prefix)"""
+        body_length = total_length - 6
+        body = self.random_alphanum(body_length)
+        checksum = self.crc32_checksum(body, base62_encode=True, length=6)
+        return f"{body}{checksum}"
+
+    def _generate_gitlab_token(self, org_id: int = None, user_id: int = None) -> str:
+        """
+        Generate GitLab Routable Personal Access Token with proper structure and checksum
+        Format Reference: https://github.com/leaktk/hack/blob/main/sdg/gen-synth-gitlab-personal-access-token
+        """
+        PREFIX = "glpat-"
+        VERSION = 1
+        VERSION_STR = self.to_base36(VERSION, min_length=2)
+
+        # Use random IDs if not provided
+        if org_id is None:
+            org_id = random.randint(1, 999999)
+        if user_id is None:
+            user_id = random.randint(1, 999999)
+
+        # Convert IDs to base36
+        oid_b36 = self.to_base36(org_id)
+        uid_b36 = self.to_base36(user_id)
+
+        # Create routing payload
+        routing_payload = f"o:{oid_b36}\nu:{uid_b36}"
+
+        # Build encodable data: [16 random bytes] + [payload] + [size byte]
+        random_bytes = secrets.token_bytes(16)
+        payload_bytes = routing_payload.encode("utf-8")
+        size_byte = struct.pack("B", len(payload_bytes))
+        encodable_data = random_bytes + payload_bytes + size_byte
+
+        # Base64 encode (URL-safe, no padding)
+        b64_payload = base64.urlsafe_b64encode(encodable_data).decode("utf-8").rstrip("=")
+
+        # Calculate length holder in base36
+        length_holder = self.to_base36(len(b64_payload), min_length=2)
+
+        # Assemble token before CRC
+        pre_crc_token = f"{PREFIX}{b64_payload}.{VERSION_STR}.{length_holder}"
+
+        # Calculate CRC32 checksum (base36, 7 chars)
+        crc_str = self.crc32_checksum(pre_crc_token, base62_encode=False, length=7)
+
+        return f"{pre_crc_token}{crc_str}"
+
+    def _generate_k8s_service_account_token(self) -> str:
+        """Generate Kubernetes service account token using proper JWT"""
+        # K8s service account tokens are JWTs with specific claims
+        namespaces = ["kube-system", "default", "production", "staging", "monitoring"]
+        service_accounts = ["default", "admin", "deployer", "metrics-server", "ingress-controller"]
+
+        custom_claims = {
+            "kubernetes.io/serviceaccount/namespace": random.choice(namespaces),
+            "kubernetes.io/serviceaccount/service-account.name": random.choice(service_accounts),
+            "kubernetes.io/serviceaccount/service-account.uid": str(uuid.uuid4())
+        }
+
+        result = self.generate_jwt(algorithm="RS256", custom_claims=custom_claims)
+        return result["token"]
+
     # === JWT Tokens ===
 
     def generate_jwt(self, algorithm: str = "HS256", include_signature: bool = True,
@@ -79,9 +194,14 @@ class SecretGenerator:
         now = datetime.now(timezone.utc)
         exp_time = now - timedelta(days=30) if expired else now + timedelta(days=365)
 
+        # Generate realistic-looking name
+        first_names = ["Jordan", "Morgan", "Casey", "Riley", "Alex", "Quinn", "Taylor", "Avery"]
+        last_names = ["Chen", "Smith", "Johnson", "Williams", "Brown", "Garcia", "Martinez", "Lee"]
+        name = f"{random.choice(first_names)} {random.choice(last_names)}"
+
         claims = {
             "sub": str(uuid.uuid4()),
-            "name": "Test User",
+            "name": name,
             "iat": int(now.timestamp()),
             "exp": int(exp_time.timestamp()),
             "jti": str(uuid.uuid4())
@@ -119,85 +239,102 @@ class SecretGenerator:
         """Generate synthetic API key for various providers"""
 
         patterns = {
+            # Format Reference: https://docs.anthropic.com/en/api/getting-started
             "anthropic": {
                 "secret": lambda: f"sk-ant-api03-{self.random_base64(40, True)}-{self.random_base64(40, True)}AA",
                 "label": "Anthropic API Key"
             },
+            # Format Reference: https://platform.openai.com/docs/api-reference/authentication
             "openai": {
                 "secret": lambda: f"sk-{self.random_alphanum(48)}",
                 "project_user": lambda: f"sk-proj-{self.random_alphanum(20)}T3BlbkFJ{self.random_alphanum(20)}",
                 "project_service": lambda: f"sk-svcacct-{self.random_alphanum(20)}T3BlbkFJ{self.random_alphanum(20)}",
                 "label": "OpenAI API Key"
             },
+            # Format Reference: https://docs.stripe.com/keys
             "stripe": {
                 "secret": lambda: f"sk_live_{self.random_alphanum(24)}",
                 "publishable": lambda: f"pk_live_{self.random_alphanum(24)}",
                 "restricted": lambda: f"rk_live_{self.random_alphanum(24)}",
                 "label": "Stripe API Key"
             },
+            # Format Reference: https://github.blog/2021-04-05-behind-githubs-new-authentication-token-formats/
             "github": {
-                "pat": lambda: f"ghp_{self.random_alphanum(36)}",
-                "fine_grained": lambda: f"github_pat_{self.random_alphanum(22)}_{self.random_alphanum(59)}",
-                "oauth": lambda: f"gho_{self.random_alphanum(36)}",
+                "pat": lambda: self._generate_github_token("ghp_", 36),
+                "fine_grained": lambda: f"github_pat_{self.random_alphanum(22)}_{self._generate_github_token_checksum(59)}",
+                "oauth": lambda: self._generate_github_token("gho_", 36),
                 "label": "GitHub Token"
             },
+            # Format Reference: https://github.com/leaktk/hack/blob/main/sdg/gen-synth-gitlab-personal-access-token
             "gitlab": {
-                "personal": lambda: f"glpat-{self.random_alphanum(20)}",
+                "personal": lambda: self._generate_gitlab_token(),
                 "oauth": lambda: f"gloa-{self.random_alphanum(64)}",
                 "label": "GitLab Token"
             },
+            # Format Reference: https://aws.amazon.com/blogs/security/a-safer-way-to-distribute-aws-credentials-to-ec2/
             "aws": {
-                "access_key": lambda: f"AKIA{self.random_string(16, string.ascii_uppercase + string.digits)}",
-                "secret_key": lambda: self.random_base64(30),
+                "access_key": lambda: f"AKIA{self.random_base32(16)}",
+                "secret_key": lambda: self.random_string(40, string.ascii_letters + string.digits + '/+='),
                 "label": "AWS Credentials"
             },
+            # Format Reference: https://api.slack.com/authentication/token-types
             "slack": {
                 "bot": lambda: f"xoxb-{self.random_string(12, string.digits)}-{self.random_string(12, string.digits)}-{self.random_alphanum(24)}",
                 "user": lambda: f"xoxp-{self.random_string(12, string.digits)}-{self.random_string(12, string.digits)}-{self.random_alphanum(24)}",
                 "webhook": lambda: f"https://hooks.slack.com/services/T{self.random_alphanum(8)}/B{self.random_alphanum(8)}/{self.random_alphanum(24)}",
                 "label": "Slack Token"
             },
+            # Format Reference: https://discord.com/developers/docs/reference#authentication
             "discord": {
                 "bot": lambda: f"MTA{self.random_string(17, string.digits)}.{self.random_base64(6, True)}.{self.random_base64(27, True)}",
                 "label": "Discord Bot Token"
             },
+            # Format Reference: https://core.telegram.org/bots/api#authorizing-your-bot
             "telegram": {
                 "bot": lambda: f"{self.random_string(10, string.digits)}:AAH{self.random_alphanum(32)}",
                 "label": "Telegram Bot Token"
             },
+            # Format Reference: https://www.twilio.com/docs/iam/credentials/api
             "twilio": {
                 "account_sid": lambda: f"AC{self.random_hex(16)}",
                 "auth_token": lambda: self.random_hex(16),
                 "label": "Twilio Credentials"
             },
+            # Format Reference: https://docs.datadoghq.com/account_management/api-app-keys/
             "datadog": {
                 "api_key": lambda: self.random_hex(16),
                 "app_key": lambda: self.random_hex(20),
                 "label": "DataDog API Key"
             },
+            # Format Reference: https://docs.sendgrid.com/ui/account-and-settings/api-keys
             "sendgrid": {
                 "api_key": lambda: f"SG.{self.random_base64(22, True)}.{self.random_base64(43, True)}",
                 "label": "SendGrid API Key"
             },
+            # Format Reference: https://mailchimp.com/developer/marketing/guides/quick-start/
             "mailchimp": {
                 "api_key": lambda: f"{self.random_hex(16)}-us{random.randint(1, 20)}",
                 "label": "Mailchimp API Key"
             },
+            # Format Reference: https://docs.sentry.io/api/auth/
             "sentry": {
                 "dsn": lambda: f"https://{self.random_hex(16)}@o{random.randint(100000, 999999)}.ingest.sentry.io/{random.randint(1000000, 9999999)}",
                 "auth_token": lambda: self.random_hex(32),
                 "label": "Sentry DSN/Token"
             },
+            # Format Reference: https://developer.pagerduty.com/docs/rest-api-v2/authentication/
             "pagerduty": {
                 "api_key": lambda: f"u+{self.random_alphanum(18)}",
                 "integration_key": lambda: self.random_hex(16),
                 "label": "PagerDuty Token"
             },
+            # Format Reference: https://docs.launchdarkly.com/sdk/concepts/client-side-server-side#keys
             "launchdarkly": {
                 "sdk_key": lambda: f"sdk-{self.random_hex(16)}",
                 "mobile_key": lambda: f"mob-{self.random_hex(16)}",
                 "label": "LaunchDarkly Key"
             },
+            # Format Reference: https://supabase.com/docs/guides/api/api-keys
             "supabase": {
                 "anon_key": lambda: f"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.{self.random_base64(100, True)}.{self.random_base64(43, True)}",
                 "service_role": lambda: f"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.{self.random_base64(120, True)}.{self.random_base64(43, True)}",
@@ -238,9 +375,9 @@ class SecretGenerator:
     def generate_db_connection_string(self, db_type: str, include_credentials: bool = True) -> Dict[str, Any]:
         """Generate synthetic database connection string"""
 
-        username = self.random_alphanum(8) if include_credentials else "user"
-        password = self.random_base64(16) if include_credentials else "password"
-        host = f"db-{self.random_alphanum(8)}.example.com"
+        username = f"dbadmin_{self.random_alphanum(6)}" if include_credentials else "dbadmin"
+        password = self.random_base64(16) if include_credentials else self.random_base64(12)
+        host = f"db-{self.random_alphanum(8)}.prod-cluster.internal"
         port_map = {
             "postgresql": 5432,
             "mysql": 3306,
@@ -276,8 +413,13 @@ class SecretGenerator:
 
     # === Password Hashes ===
 
-    def generate_password_hash(self, hash_type: str, password: str = "P@ssw0rd123!") -> Dict[str, Any]:
+    def generate_password_hash(self, hash_type: str, password: str = None) -> Dict[str, Any]:
         """Generate synthetic password hash"""
+
+        # Generate realistic password if not provided
+        if password is None:
+            words = ["Quantum", "Neural", "Crypto", "Matrix", "Vector", "Phoenix", "Nexus", "Cipher"]
+            password = f"{random.choice(words)}{random.randint(100, 999)}!{self.random_alphanum(4)}"
 
         hashes = {
             "md5": lambda p: hashlib.md5(p.encode()).hexdigest(),
@@ -383,8 +525,16 @@ class SecretGenerator:
 
     # === 2FA & TOTP ===
 
-    def generate_totp_secret(self, issuer: str = "Example", username: str = "user@example.com") -> Dict[str, Any]:
+    def generate_totp_secret(self, issuer: str = None, username: str = None) -> Dict[str, Any]:
         """Generate synthetic TOTP secret"""
+
+        # Generate realistic issuer and username if not provided
+        if issuer is None:
+            issuers = ["Acme Corp", "CloudSync", "DataVault", "SecureAuth", "NetOps", "DevPortal"]
+            issuer = random.choice(issuers)
+        if username is None:
+            domains = ["company.com", "corp.io", "enterprise.net", "tech.dev", "platform.cloud"]
+            username = f"{self.random_alphanum(8).lower()}@{random.choice(domains)}"
 
         secret = self.random_base64(20, False).replace('+', '').replace('/', '').replace('=', '').upper()
         uri = f"otpauth://totp/{issuer}:{username}?secret={secret}&issuer={issuer}&algorithm=SHA1&digits=6&period=30"
@@ -411,17 +561,17 @@ class SecretGenerator:
         """Generate synthetic cloud platform token"""
 
         patterns = {
+            # Format Reference: https://developer.hashicorp.com/terraform/cloud-docs/users-teams-organizations/api-tokens
             "terraform": {
                 "token": lambda: f"{self.random_alphanum(14)}.atlasv1.{self.random_base64(64, True)}"
             },
-            "vault": {
-                "token": lambda: f"hvs.{self.random_base64(24, True)}"
+            # Format Reference: https://developer.hashicorp.com/vault/docs/concepts/tokens
+            "hashicorp_vault": {
+                "token": lambda: f"hvs.{self.random_base64(random.randint(20, 40), True)}"
             },
-            "ansible": {
-                "vault_password": lambda: self.random_base64(32)
-            },
+            # Format Reference: https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/
             "k8s": {
-                "service_account": lambda: f"eyJhbGciOiJSUzI1NiIsImtpZCI6IntLUSJ9.{self.random_base64(200, True)}.{self.random_base64(350, True)}"
+                "service_account": lambda: self._generate_k8s_service_account_token()
             }
         }
 
