@@ -1,0 +1,96 @@
+# Metadata: label=Snowflake connection configurations in YAML, type=database_connection, db_type=snowflake, context=YAML configuration, generator=manual
+
+# dbt profiles.yml format
+snowflake_profile:
+  target: prod
+  outputs:
+    prod:
+      type: snowflake
+      account: xy12345.us-east-1
+      user: dbt_user
+      password: DBT_Sn0wfl@ke_P@ss_2026!
+      role: TRANSFORMER
+      database: ANALYTICS
+      warehouse: TRANSFORM_WH
+      schema: DBT_PROD
+      threads: 4
+      client_session_keep_alive: False
+
+    dev:
+      type: snowflake
+      account: xy12345.us-east-1
+      user: dbt_dev_user
+      password: DBT_D3v_P@ssw0rd!
+      role: DEVELOPER
+      database: DEV_DB
+      warehouse: DEV_WH
+      schema: DBT_DEV
+      threads: 2
+
+# Airflow connection format
+airflow_connections:
+  snowflake_default:
+    conn_type: snowflake
+    host: xy12345.us-east-1.snowflakecomputing.com
+    schema: PUBLIC
+    login: airflow_user
+    password: A1rfl0w_Sn0wfl@ke_2026!
+    port: null
+    extra:
+      account: xy12345.us-east-1
+      warehouse: AIRFLOW_WH
+      database: AIRFLOW_DB
+      region: us-east-1
+      role: PIPELINE_ROLE
+
+# Application configuration
+app_config:
+  databases:
+    snowflake:
+      primary:
+        account: xy12345.us-east-1
+        user: app_primary_user
+        password: Pr1m@ry_App_Sn0wfl@ke!
+        warehouse: PRIMARY_WH
+        database: PRODUCTION
+        schema: APP_DATA
+        role: APPLICATION_ROLE
+
+      read_replica:
+        account: xy12345.us-east-1
+        user: app_readonly_user
+        password: R3@d0nly_App_P@ss_2026!
+        warehouse: READONLY_WH
+        database: PRODUCTION
+        schema: APP_DATA
+        role: READONLY_ROLE
+
+      analytics:
+        account: xy12345.us-east-1
+        user: analytics_service
+        password: An@lyt1cs_Sn0wfl@ke_2026!
+        warehouse: ANALYTICS_WH
+        database: ANALYTICS_DB
+        schema: METRICS
+        role: ANALYST
+
+# Key-pair authentication
+key_pair_auth:
+  account: xy12345.us-east-1
+  user: keypair_user
+  private_key_path: /secrets/snowflake_rsa_key.p8
+  private_key_passphrase: RSA_K3y_P@ssw0rd_2026!
+  warehouse: KEYPAIR_WH
+  database: SECURE_DB
+  schema: PROTECTED
+  role: KEYPAIR_ROLE
+
+# OAuth configuration
+oauth_config:
+  account: xy12345.us-east-1
+  user: oauth_user@example.com
+  authenticator: oauth
+  token: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvYXV0aF91c2VyIiwiaXNzIjoic25vd2ZsYWtlIiwiZXhwIjoxNzQwODU2MDAwfQ.5xY6zA7bC8dE9fG0hI1jK2lM3nO4pQ5rS6tU7vW8xY9zA0bC1dE2fG
+  warehouse: OAUTH_WH
+  database: OAUTH_DB
+  role: OAUTH_USER

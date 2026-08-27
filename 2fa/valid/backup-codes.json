@@ -1,0 +1,25 @@
+{
+  "_comment": "Metadata: label=2FA backup and recovery codes, type=totp_backup_codes, context=JSON backup file, generator=manual",
+  "user_id": "user_12345",
+  "email": "user@example.com",
+  "created_at": "2024-01-01T00:00:00Z",
+  "totp_enabled": true,
+  "totp_secret": "JBSWY3DPEHPK3PXP",
+  "backup_codes": [
+    {"code": "1a2b-3c4d", "used": false, "created": "2024-01-01T00:00:00Z"},
+    {"code": "5e6f-7g8h", "used": false, "created": "2024-01-01T00:00:00Z"},
+    {"code": "9i0j-1k2l", "used": true, "created": "2024-01-01T00:00:00Z", "used_at": "2024-02-15T10:30:00Z"},
+    {"code": "3m4n-5o6p", "used": false, "created": "2024-01-01T00:00:00Z"},
+    {"code": "7q8r-9s0t", "used": false, "created": "2024-01-01T00:00:00Z"},
+    {"code": "1u2v-3w4x", "used": false, "created": "2024-01-01T00:00:00Z"},
+    {"code": "5y6z-7a8b", "used": false, "created": "2024-01-01T00:00:00Z"},
+    {"code": "9c0d-1e2f", "used": false, "created": "2024-01-01T00:00:00Z"},
+    {"code": "3g4h-5i6j", "used": false, "created": "2024-01-01T00:00:00Z"},
+    {"code": "7k8l-9m0n", "used": false, "created": "2024-01-01T00:00:00Z"}
+  ],
+  "recovery_keys": [
+    "r3c0v3ry-k3y-1a2b3c4d5e6f7g8h",
+    "r3c0v3ry-k3y-9i0j1k2l3m4n5o6p",
+    "r3c0v3ry-k3y-7q8r9s0t1u2v3w4x"
+  ]
+}

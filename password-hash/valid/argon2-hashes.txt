@@ -1,0 +1,20 @@
+# Metadata: label=Argon2 password hashes, type=password_hash, hash_type=argon2, context=hash examples, generator=secret_generator.py
+
+# Argon2id hashes (recommended variant)
+# Password: mypassword
+$argon2id$v=19$m=65536,t=3,p=4$c29tZXNhbHQAAAAAAAAAAA$RdescudvJCsgt3ub+b+dWRWJTmaaJObG
+
+# Password: AdminPass2024
+$argon2id$v=19$m=65536,t=3,p=4$5f6a7b8c9d0e1f2a3b4c5d6e$1bC2dE3fG4hI5jK6lM7nO8pQ9rS0tU1vW2xY3zA4bC5dE6fG7hI8jK9lM0nO1pQ
+
+# Password: SecurePassword!
+$argon2id$v=19$m=65536,t=3,p=4$9d0e1f2a3b4c5d6e7f8a9b0c$3eF4gH5iJ6kL7mN8oP9qR0sT1uV2wX3yZ4aB5cD6eF7gH8iJ9kL0mN1oP2qR3sT
+
+# Argon2i variant (data-independent)
+$argon2i$v=19$m=65536,t=3,p=4$c2FsdHlzYWx0AAAAAAAAAAAA$7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d
+
+# Argon2d variant (data-dependent)
+$argon2d$v=19$m=65536,t=3,p=4$cmFuZG9tc2FsdAAAAAAAAA$5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a
+
+# Different memory cost (m=32768)
+$argon2id$v=19$m=32768,t=4,p=2$c29tZXNhbHQyAAAAAAAA$9rS0tU1vW2xY3zA4bC5dE6fG7hI8jK9lM0nO1pQ2rS3tU4vW5xY6zA7bC8dE9fG

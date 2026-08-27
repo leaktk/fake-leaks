@@ -1,0 +1,33 @@
+# Metadata: label=Redis connection strings in YAML, type=database_connection, db_type=redis, context=YAML configuration, generator=manual
+
+redis:
+  # Standard Redis connection
+  cache:
+    url: redis://default:R3d1s_C@ch3_P@ss@redis-cache.example.com:6379/0
+    timeout: 5000
+
+  # Redis with username and password
+  sessions:
+    url: redis://sessionuser:S3ss10n_P@ssw0rd@redis-sessions.example.com:6379/1
+    max_connections: 100
+
+  # Redis Sentinel
+  sentinel:
+    url: redis://sentineluser:S3nt1n3l_P@ss@redis-sentinel.example.com:26379/0
+    master_name: mymaster
+
+  # Redis Cluster
+  cluster:
+    url: redis://clusteruser:Clust3r_P@ssw0rd_2024@redis-cluster.example.com:6379
+    read_from_replicas: true
+
+  # ElastiCache Redis
+  elasticache:
+    url: redis://:Elast1C@che_T0k3n@master.redis-cluster.abc123.use1.cache.amazonaws.com:6379/0
+    ssl: true
+
+# Alternative format (rediss:// for TLS)
+redis_tls:
+  production:
+    url: rediss://produser:Pr0d_R3dis_P@ss!@redis-prod.example.com:6380/0
+    tls_cert_path: /etc/ssl/redis-cert.pem

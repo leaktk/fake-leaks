@@ -1,0 +1,53 @@
+# Metadata: label=Multiple database connection strings in Docker Compose, type=database_connection, db_type=mixed, context=Docker Compose, generator=manual
+
+version: '3.8'
+
+services:
+  app:
+    image: myapp:latest
+    environment:
+      # PostgreSQL
+      - DATABASE_URL=postgresql://appuser:App_P0stgr3s_P@ss@postgres:5432/appdb
+
+      # MySQL
+      - MYSQL_CONNECTION=mysql://mysqluser:MySQL_App_P@ss123@mysql:3306/application
+
+      # MongoDB
+      - MONGO_URI=mongodb://mongouser:M0ng0_C0nn3ct_P@ss@mongodb:27017/appdata?authSource=admin
+
+      # Redis
+      - REDIS_URL=redis://default:R3dis_S3cr3t_P@ss@redis:6379/0
+
+      # Multiple connections in JSON
+      - DB_CONNECTIONS={"primary":"postgresql://user1:Pr1m@ry_P@ss@db1:5432/main","secondary":"postgresql://user2:S3c0nd@ry_P@ss@db2:5432/backup"}
+
+    depends_on:
+      - postgres
+      - mysql
+      - mongodb
+      - redis
+
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: appuser
+      POSTGRES_PASSWORD: App_P0stgr3s_P@ss
+      POSTGRES_DB: appdb
+
+  mysql:
+    image: mysql:8
+    environment:
+      MYSQL_USER: mysqluser
+      MYSQL_PASSWORD: MySQL_App_P@ss123
+      MYSQL_DATABASE: application
+      MYSQL_ROOT_PASSWORD: R00t_MySQL_P@ss_2024!
+
+  mongodb:
+    image: mongo:6
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongouser
+      MONGO_INITDB_ROOT_PASSWORD: M0ng0_C0nn3ct_P@ss
+
+  redis:
+    image: redis:7
+    command: redis-server --requirepass R3dis_S3cr3t_P@ss
