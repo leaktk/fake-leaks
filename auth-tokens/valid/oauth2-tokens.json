@@ -1,0 +1,22 @@
+{
+  "_comment": "Metadata: label=OAuth2 access and refresh tokens, type=oauth_token, context=JSON token storage, generator=secret_generator.py",
+  "oauth2": {
+    "access_token": "ya29.a0AfB_byBxK9mN4oP5qR6sT7uV8wX9yZ0aB1cD2eF3gH4iJ5kL6mN7oP8qR9sT0uV1wX2yZ3aB4cD5eF6gH7iJ8kL9mN0oP1qR2sT3uV4wX5yZ6aB7cD8eF9gH0iJ1kL2mN3oP4qR5sT6uV7wX8yZ9aB0cD1eF2gH3iJ4kL5mN6oP7qR8sT9uV0wX1yZ2aB3cD4eF5gH6iJ7kL8mN9oP0qR",
+    "refresh_token": "1//0gH5iJ6kL7mN8oP9qR0sT1uV2wX3yZ4aB5cD6eF7gH8iJ9kL0mN1oP2qR3sT4uV5wX6yZ7aB8cD9eF0gH1iJ2kL3mN4oP5qR6sT7uV8wX9yZ0aB1cD2eF3gH4iJ5kL6mN7oP8qR9sT0uV1wX2yZ3aB4cD5eF6gH7iJ8kL9mN0oP1qR2sT3uV4wX5yZ6aB7cD8eF9gH0iJ1kL2mN3oP",
+    "token_type": "Bearer",
+    "expires_in": 3600,
+    "scope": "https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email"
+  },
+  "github_oauth": {
+    "access_token": "gho_16C7e42F292c6912E7710c838347Ae178B4a",
+    "refresh_token": "ghr_1B4a6B8c0D2e4F6g8H0i2J4k6L8m0N2o4P6q8R0s2T4u6V8w0X2y4Z6a8B0c2D4e",
+    "token_type": "bearer",
+    "scope": "repo,user"
+  },
+  "slack_oauth": {
+    "access_token": "xoxp-1234567890-1234567890-1234567890-5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c",
+    "refresh_token": "xoxe-1-abc123def456ghi789jkl012mno345pqr678stu901vwx234yz",
+    "token_type": "Bearer",
+    "scope": "channels:read,chat:write,users:read"
+  }
+}

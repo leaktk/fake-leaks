@@ -1,0 +1,17 @@
+{
+  "_comment": "Metadata: label=Stripe API keys, type=api_key, provider=stripe, context=JSON configuration, generator=secret_generator.py",
+  "stripe": {
+    "live": {
+      "secret_key": "sk_live_51MnO7pQ8rS9tU0vW1xY2zA3bC4dE5fG6hI7jK8lM9nO0pQ1rS2tU3vW4xY",
+      "publishable_key": "pk_live_51MnO7pQ8rS9tU0vW1xY2zA3bC4dE5fG6hI7jK8lM9nO0pQ1rS2tU3vW4xY",
+      "restricted_key": "rk_live_51MnO7pQ8rS9tU0vW1xY2zA3bC4dE5fG6hI7jK8lM9nO0pQ1rS2tU3vW4xY"
+    },
+    "test": {
+      "secret_key": "sk_test_51PqR2sT3uV4wX5yZ6aB7cD8eF9gH0iJ1kL2mN3oP4qR5sT6uV7wX8yZ9aB",
+      "publishable_key": "pk_test_51PqR2sT3uV4wX5yZ6aB7cD8eF9gH0iJ1kL2mN3oP4qR5sT6uV7wX8yZ9aB"
+    },
+    "webhooks": {
+      "signing_secret": "whsec_fG6hI7jK8lM9nO0pQ1rS2tU3vW4xY5zA6bC7dE8"
+    }
+  }
+}

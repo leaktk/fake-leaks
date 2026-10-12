@@ -1,0 +1,18 @@
+{
+  "_comment": "Metadata: label=ChaCha20 encryption keys, type=encryption_key, key_type=chacha20, context=JSON configuration, generator=secret_generator.py",
+  "encryption": {
+    "chacha20_keys": {
+      "primary": "1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a",
+      "secondary": "9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e",
+      "archive": "3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a"
+    },
+    "poly1305_keys": {
+      "mac_key": "7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d"
+    }
+  },
+  "metadata": {
+    "algorithm": "ChaCha20-Poly1305",
+    "key_size": 256,
+    "created": "2024-01-01T00:00:00Z"
+  }
+}

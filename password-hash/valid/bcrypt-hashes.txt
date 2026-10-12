@@ -1,0 +1,21 @@
+# Metadata: label=Bcrypt password hashes, type=password_hash, hash_type=bcrypt, context=hash examples, generator=secret_generator.py
+
+# Bcrypt hashes (cost factor 12)
+# Password: password123
+$2b$12$KIXqF5v8K9V8z8V8z8V8zOmHJZvF5v8K9V8z8V8z8V8z8V8z8V8zu
+
+# Password: admin2024
+$2b$12$7mN8oP9qR0sT1uV2wX3yZuK9mN8oP9qR0sT1uV2wX3yZ9aB1cD2eF
+
+# Password: SecureP@ssw0rd!
+$2b$12$3eF4gH5iJ6kL7mN8oP9qRuV8wX9yZ0aB1cD2eF3gH4iJ5kL6mN7oP
+
+# Cost factor 10
+$2b$10$9zA1bC2dE3fG4hI5jK6lMu7nO8pQ9rS0tU1vW2xY3zA4bC5dE6fG7
+
+# Cost factor 14 (slower but more secure)
+$2b$14$5hI6jK7lM8nO9pQ0rS1tUu2vW3xY4zA5bC6dE7fG8hI9jK0lM1nO2
+
+# Bcrypt from shadow file format
+user1:$2b$12$1bC2dE3fG4hI5jK6lM7nOuP8qR9sT0uV1wX2yZ3aB4cD5eF6gH7iJ:18993:0:99999:7:::
+admin:$2b$12$9dE0fG1hI2jK3lM4nO5pQuR6sT7uV8wX9yZ0aB1cD2eF3gH4iJ5kL:18993:0:99999:7:::

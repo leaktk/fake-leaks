@@ -1,0 +1,9 @@
+Metadata: label=JWT Token (HS384) in HTTP request, type=jwt, algorithm=HS384, context=HTTP headers, generator=manual
+
+GET /api/v1/users HTTP/1.1
+Host: api.example.com
+Authorization: Bearer eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzZXJ2aWNlLWFjY291bnQiLCJhdWQiOiJhcGkuZXhhbXBsZS5jb20iLCJpc3MiOiJhdXRoLmV4YW1wbGUuY29tIiwiaWF0IjoxNzA5MzAwMDAwLCJleHAiOjE3MDkzMDM2MDAsInJvbGVzIjpbInNlcnZpY2UiXX0.dH2kL4mN5oP6qR7sT8uV9wX0yZ1aB2cD3eF4gH5iJ6kL7mN8oP9qR0sT
+Content-Type: application/json
+Accept: application/json
+User-Agent: MyApp/1.0
+

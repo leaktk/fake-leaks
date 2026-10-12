@@ -1,0 +1,38 @@
+# Metadata: label=Sumo Logic collector and installation tokens, type=collector_token, provider=sumologic, context=YAML configuration, generator=manual
+
+sumologic_collectors:
+  # Installation Token (for installing collectors)
+  installation_token: "suABCD1234567890EFGH5678IJKL9012MNOP3456QRST"
+
+  # HTTP Source URL (for sending logs)
+  http_source_url: "https://collectors.sumologic.com/receiver/v1/http/ZXhhbXBsZV9odHRwX3NvdXJjZV90b2tlbl8xMjM0NTY3ODkw"
+
+  # Alternative HTTP source
+  metrics_source: "https://endpoint1.collection.us2.sumologic.com/receiver/v1/http/ZXhhbXBsZV9tZXRyaWNzX3NvdXJjZV90b2tlbl9hYmNkZWZnaGlq"
+
+collectors:
+  production:
+    name: "production-collector"
+    installation_token: "suPROD5678901234ABCD8901EFGH2345IJKL6789MNOP"
+    http_sources:
+      - name: "app-logs"
+        url: "https://collectors.sumologic.com/receiver/v1/http/cHJvZF9hcHBfbG9nc19zb3VyY2VfdG9rZW5fMTIzNDU2Nzg5MA=="
+      - name: "access-logs"
+        url: "https://collectors.sumologic.com/receiver/v1/http/cHJvZF9hY2Nlc3NfbG9nc19zb3VyY2VfdG9rZW5fYWJjZGVmZ2g="
+
+  staging:
+    name: "staging-collector"
+    installation_token: "suSTAG9012345678WXYZ1234ABCD5678EFGH9012IJKL"
+    http_sources:
+      - name: "staging-logs"
+        url: "https://endpoint5.collection.us1.sumologic.com/receiver/v1/http/c3RhZ2luZ19sb2dzX3NvdXJjZV90b2tlbl9zdGFnaW5nMTIz"
+
+# Cloud-to-Cloud Source tokens
+c2c_sources:
+  aws_s3:
+    role_arn: "arn:aws:iam::123456789012:role/SumoLogicSourceRole"
+    external_id: "SumoExternalId:abc123def456ghi789jkl012"
+
+  okta:
+    api_token: "00abcDEF1ghiJKL2mnoPQR3stuvWXY4z5A6B7C8D9E"
+    domain: "example.okta.com"

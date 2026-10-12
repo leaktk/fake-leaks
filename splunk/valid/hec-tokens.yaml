@@ -1,0 +1,52 @@
+# Metadata: label=Splunk HTTP Event Collector (HEC) tokens, type=hec_token, provider=splunk, context=YAML configuration, generator=manual
+
+splunk_hec:
+  # HTTP Event Collector Token
+  production:
+    host: "splunk-prod.example.com"
+    port: 8088
+    token: "5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c"
+    index: "main"
+    sourcetype: "application:log"
+    ssl_verify: true
+
+  staging:
+    host: "splunk-staging.example.com"
+    port: 8088
+    token: "1bC2dE3f-G4hI-5jK6-lM7n-O8pQ9rS0tU1v"
+    index: "staging"
+    sourcetype: "application:log"
+    ssl_verify: true
+
+# Multiple HEC endpoints
+hec_endpoints:
+  app_logs:
+    url: "https://http-inputs-splunk.example.com:8088/services/collector/event"
+    token: "9d0e1f2a-3b4c-5d6e-7f8a-9b0c1d2e3f4a"
+
+  metrics:
+    url: "https://http-inputs-splunk.example.com:8088/services/collector/event"
+    token: "3f4a5b6c-7d8e-9f0a-1b2c-3d4e5f6a7b8c"
+
+  raw_logs:
+    url: "https://http-inputs-splunk.example.com:8088/services/collector/raw"
+    token: "7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e2f"
+
+# Cloud HEC configuration
+splunk_cloud:
+  inputs_url: "https://inputs.splunkcloud.com:8088/services/collector"
+  hec_token: "A1B2C3D4-E5F6-G7H8-I9J0-K1L2M3N4O5P6"
+
+# Splunk Cloud with specific instance
+cloud_instance:
+  host: "prd-p-abc123.splunkcloud.com"
+  hec_token: "Q7R8S9T0-U1V2-W3X4-Y5Z6-A7B8C9D0E1F2"
+  port: 8088
+  protocol: "https"
+
+# AWS Kinesis Firehose to Splunk HEC
+firehose_hec:
+  delivery_stream_name: "splunk-delivery-stream"
+  hec_endpoint: "https://http-inputs-splunk.example.com:8088/services/collector"
+  hec_token: "G3H4I5J6-K7L8-M9N0-O1P2-Q3R4S5T6U7V8"
+  hec_acknowledgment_timeout: 180

@@ -1,0 +1,17 @@
+# Metadata: label=Age encryption keys, type=encryption_key, key_type=age, context=age key file, generator=secret_generator.py
+
+# AGE secret keys for file encryption
+# Created: 2024-01-01
+# Public key: age1qyqszqgpqyqszqgpqyqszqgpqyqszqgpqyqszqgpqyqszqgpqyqsz
+
+AGE-SECRET-KEY-1QYQSZQGPQYQSZQGPQYQSZQGPQYQSZQGPQYQSZQGPQYQSZQGPQYQS
+
+# Backup key
+AGE-SECRET-KEY-1PQYQSZQGPQYQSZQGPQYQSZQGPQYQSZQGPQYQSZQGPQYQSZQGPQY
+
+# Service account key
+AGE-SECRET-KEY-1RQYQSZQGPQYQSZQGPQYQSZQGPQYQSZQGPQYQSZQGPQYQSZQGPQS
+
+# Multiple keys for different purposes
+AGE-SECRET-KEY-1SQYQSZQGPQYQSZQGPQYQSZQGPQYQSZQGPQYQSZQGPQYQSZQGPQT
+AGE-SECRET-KEY-1TQYQSZQGPQYQSZQGPQYQSZQGPQYQSZQGPQYQSZQGPQYQSZQGPQU

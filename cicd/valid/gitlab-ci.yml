@@ -1,0 +1,38 @@
+# Metadata: label=GitLab CI tokens, type=cicd_token, platform=gitlab, context=GitLab CI configuration, generator=secret_generator.py
+
+variables:
+  # GitLab Runner Registration Token
+  RUNNER_TOKEN: GR13489417c8d9e0f1a2b3c4d5e6f7a8b
+
+  # GitLab Personal Access Token
+  GITLAB_TOKEN: glpat-9XyZ0aB1cD2eF3gH4iJ5
+
+  # GitLab CI Job Token (provided automatically, shown for reference)
+  # CI_JOB_TOKEN: $CI_JOB_TOKEN
+
+  # GitLab Deploy Token
+  DEPLOY_TOKEN: gldt-5bC6dE7fG8hI9jK0lM1nO2pQ
+
+  # GitLab Trigger Token
+  TRIGGER_TOKEN: glptt-3rS4tU5vW6xY7zA8bC9dE0fG
+
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - echo "Building with token $GITLAB_TOKEN"
+
+deploy:
+  stage: deploy
+  script:
+    - |
+      curl -X POST \
+        -F token=1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c \
+        -F ref=main \
+        https://gitlab.com/api/v4/projects/123/trigger/pipeline
+  environment:
+    name: production
+    url: https://example.com

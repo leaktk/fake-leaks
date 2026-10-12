@@ -1,0 +1,36 @@
+# Metadata: label=GitHub Actions tokens, type=cicd_token, platform=github_actions, context=GitHub Actions workflow, generator=secret_generator.py
+
+name: CI/CD Pipeline
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      # GitHub Personal Access Token (classic)
+      GH_PAT: ghp_1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b
+
+      # GitHub App Installation Token (ghs_ prefix)
+      GH_INSTALLATION_TOKEN: ghs_5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c
+
+      # GitHub Actions token (automatically provided, but shown for reference)
+      # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Authenticate with GitHub
+        run: |
+          echo "GH_TOKEN=ghp_9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e" >> $GITHUB_ENV
+
+      - name: Use GitHub CLI
+        env:
+          GH_TOKEN: ghp_3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a
+        run: gh api user
+
+      - name: Deploy
+        env:
+          DEPLOY_TOKEN: ghp_7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d
+        run: ./deploy.sh

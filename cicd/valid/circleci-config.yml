@@ -1,0 +1,24 @@
+# Metadata: label=CircleCI tokens, type=cicd_token, platform=circleci, context=CircleCI configuration, generator=secret_generator.py
+
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: cimg/node:18.0
+    environment:
+      # CircleCI personal API token
+      CIRCLE_TOKEN: 5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b
+
+      # Project API token
+      PROJECT_API_TOKEN: 1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a
+
+    steps:
+      - checkout
+      - run:
+          name: Deploy
+          command: |
+            curl -X POST https://circleci.com/api/v2/project/gh/org/repo/pipeline \
+              -H "Circle-Token: 9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e" \
+              -H "Content-Type: application/json" \
+              -d '{"branch":"main"}'

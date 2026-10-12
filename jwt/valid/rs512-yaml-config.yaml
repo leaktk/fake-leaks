@@ -1,0 +1,17 @@
+# Metadata:
+# label: JWT Token (RS512) in YAML configuration
+# type: jwt
+# algorithm: RS512
+# context: YAML configuration file
+# generator: manual
+
+apiVersion: v1
+kind: Config
+authentication:
+  type: jwt
+  token: eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCIsImtpZCI6InJzYS1rZXktMjAyNCJ9.eyJzdWIiOiJrdWJlcm5ldGVzLWFkbWluIiwibmFtZSI6IkNsdXN0ZXIgQWRtaW4iLCJpYXQiOjE3MDkyMzU2MDAsImV4cCI6MTc0MDc3MTYwMCwiZ3JvdXBzIjpbInN5c3RlbTptYXN0ZXJzIiwic3lzdGVtOmF1dGhlbnRpY2F0ZWQiXSwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJkZWZhdWx0Iiwic2VydmljZWFjY291bnQiOnsibmFtZSI6ImFkbWluIn19fQ.qW8xY5zA1bC3dE4fG6hI7jK9lM0nO2pQ3rS5tU6vW8xY9zA0bC2dE3fG5hI6jK8lM9nO1pQ2rS4tU5vW7xY8zA9bC0dE1fG2hI3jK4lM5nO6pQ7rS8tU9vW0xY1zA2bC3dE4fG5hI6jK7lM8nO9pQ0rS1tU2vW3xY4zA5bC6dE7fG8hI9jK0lM1nO2pQ3rS4tU5vW6xY7zA8bC9dE
+  issuer: https://kubernetes.example.com
+  audience: kubernetes
+server:
+  url: https://k8s-api.example.com:6443
+  certificate-authority: /etc/kubernetes/pki/ca.crt

@@ -1,0 +1,8 @@
+{
+  "_comment": "Metadata: label=JWT Token (RS256) in JSON config, type=jwt, algorithm=RS256, context=JSON configuration file, generator=manual",
+  "auth": {
+    "jwt_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsIm5hbWUiOiJBZG1pbiBVc2VyIiwiaWF0IjoxNzA5MjM1NjAwLCJleHAiOjE3NDA3NzE2MDAsInJvbGUiOiJhZG1pbiIsInBlcm1pc3Npb25zIjpbInJlYWQiLCJ3cml0ZSIsImRlbGV0ZSJdfQ.mKVZ8n3xJH6YxHFz7T9wPJL8sQ3vR2nX4dY5kE9jW1tN3mP6qR7sU8vW9xY0zA1bC2dE3fG4hI5jK6lM7nO8pQ9rS0tU1vW2xY3zA4bC5dE6fG7hI8jK9lM0nO1pQ2rS",
+    "refresh_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbkBleGFtcGxlLmNvbSIsInR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzA5MjM1NjAwLCJleHAiOjE3NzI1NjMwMDB9.pL7xZ2kJ9mH8wPqR5vN3sY6tC1dX4eF7gI0jK9lM6nO5pQ8rS9tU0vW1xY2zA3bC4dE5fG6hI7jK8lM9nO0pQ1rS2tU3vW4xY5zA6bC7dE8fG9hI0jK1lM2nO3pQ4rS"
+  },
+  "api_endpoint": "https://api.example.com/v1"
+}
